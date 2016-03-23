@@ -1,0 +1,107 @@
+html, body {
+	background-color: #222222;
+}
+
+#sb-site {
+	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3); /* Shadow cast onto the slidebars when opened. */
+}
+
+// .navbar .sb-toggle-right {
+// 	width: 58px;
+// 	float: right;
+// 	padding: 14px;
+// }
+
+.sb-toggle-right {
+	cursor: pointer;
+}
+
+ul.navbar-nav {
+	display: none;
+}
+
+
+
+
+
+/* Slidebars */
+.sb-slidebar {
+	background-color: #222222; /* Background colour. */
+	color: #e8e8e8; /* Text colour. */
+}
+
+.sb-slidebar a {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.sb-slidebar a:hover {
+	color: #14E5C3; 
+	text-decoration: underline;
+}
+
+/* Main Menu */
+.sb-menu { /* Apply to <ul> or <ol>. */
+	padding: 20px;
+	margin: 0;
+	list-style-type: none;
+}
+
+.sb-menu li {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.1); /* Will lighten any background colour you set. */
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Will darken any background colour you set. */
+}
+
+.sb-menu > li:first-child {
+	border-top: none; /* Removes top border from first list item.. */
+}
+
+.sb-menu > li:last-child {
+	border-bottom: none; /* Removed bottom border from last list item. */
+}
+
+.sb-menu li a {
+	width: 100%; /* Makes links full width. */
+	display: inline-block;
+	padding: 1.22em; /* Creates an even padding the same size as your font. */
+	color: #fff;
+}
+
+.sb-menu li a:hover {
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.05); /* Will lighten any background colour you set. */
+}
+
+/* Borders */
+.sb-right .sb-menu li a {
+	border-right: 3px solid transparent;
+}
+
+.sb-right .sb-menu li a:hover {
+	border-right: 3px solid; /* Removes transparent colour, so border colour will be the same as link hover colour. */
+}
+
+
+
+
+
+@media (min-width: 768px) {
+	// ul.navbar-nav {
+	// 	display: block;
+	// }
+	
+	// #logo {
+	// 	text-align: left;
+	// }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

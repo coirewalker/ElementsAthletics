@@ -1,0 +1,138 @@
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0; }
+
+.homepage-bg {
+  background: url("../images/temp-bg.jpg");
+  background-size: cover;
+  position: relative;
+  background-repeat: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background-position: right top; }
+
+html, body {
+  background-color: #222222; }
+
+#sb-site {
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
+  /* Shadow cast onto the slidebars when opened. */ }
+
+.sb-toggle-right {
+  cursor: pointer; }
+
+ul.navbar-nav {
+  display: none; }
+
+/* Slidebars */
+.sb-slidebar {
+  background-color: #222222;
+  /* Background colour. */
+  color: #e8e8e8;
+  /* Text colour. */ }
+
+.sb-slidebar a {
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.sb-slidebar a:hover {
+  color: #14E5C3;
+  text-decoration: underline; }
+
+/* Main Menu */
+.sb-menu {
+  /* Apply to <ul> or <ol>. */
+  padding: 20px;
+  margin: 0;
+  list-style-type: none; }
+
+.sb-menu li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* Will lighten any background colour you set. */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* Will darken any background colour you set. */ }
+
+.sb-menu > li:first-child {
+  border-top: none;
+  /* Removes top border from first list item.. */ }
+
+.sb-menu > li:last-child {
+  border-bottom: none;
+  /* Removed bottom border from last list item. */ }
+
+.sb-menu li a {
+  width: 100%;
+  /* Makes links full width. */
+  display: inline-block;
+  padding: 1.22em;
+  /* Creates an even padding the same size as your font. */
+  color: #fff; }
+
+.sb-menu li a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  /* Will lighten any background colour you set. */ }
+
+/* Borders */
+.sb-right .sb-menu li a {
+  border-right: 3px solid transparent; }
+
+.sb-right .sb-menu li a:hover {
+  border-right: 3px solid;
+  /* Removes transparent colour, so border colour will be the same as link hover colour. */ }
+
+header {
+  height: 70px;
+  background-color: none;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.desktop-nav {
+  text-align: center; }
+  .desktop-nav ul {
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 20px 0; }
+  .desktop-nav li {
+    display: inline-block;
+    padding: 0 18px; }
+  .desktop-nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: 1s;
+    /* Safari */
+    transition: 1s; }
+    .desktop-nav a:hover {
+      color: #14E5C3; }
+
+.logo {
+  background: url("../images/logo.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 66px;
+  width: 66px; }
+
+.burger {
+  font-size: 35px;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  -webkit-transition: 1s;
+  /* Safari */
+  transition: 1s; }
+  .burger:hover {
+    color: #14E5C3; }
+
+/*# sourceMappingURL=main.css.map */
