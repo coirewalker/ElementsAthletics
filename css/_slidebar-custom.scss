@@ -6,12 +6,6 @@ html, body {
 	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3); /* Shadow cast onto the slidebars when opened. */
 }
 
-// .navbar .sb-toggle-right {
-// 	width: 58px;
-// 	float: right;
-// 	padding: 14px;
-// }
-
 .sb-toggle-right {
 	cursor: pointer;
 }
@@ -48,7 +42,7 @@ ul.navbar-nav {
 }
 
 .sb-menu li {
-	width: 93%;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	border-top: 1px solid rgba(255, 255, 255, 0.1); /* Will lighten any background colour you set. */
@@ -64,7 +58,7 @@ ul.navbar-nav {
 }
 
 .sb-menu li a {
-	width: 94%; /* Makes links full width. */
+	width: 100%; /* Makes links full width. */
 	display: inline-block;
 	padding: 1.22em; /* Creates an even padding the same size as your font. */
 	color: #fff;
@@ -72,7 +66,7 @@ ul.navbar-nav {
 
 .sb-menu li a:hover {
 	text-decoration: none;
-	background-color: rgba(255, 255, 255, 0.05); /* Will lighten any background colour you set. */
+	background-color: rgba(255, 255, 255, 0.02); /* Will lighten any background colour you set. */
 }
 
 
@@ -85,24 +79,3 @@ ul.navbar-nav {
 	border-right: 3px solid; /* Removes transparent colour, so border colour will be the same as link hover colour. */
 }
 
-
-
-
-
-@media (min-width: 768px) {
-	// ul.navbar-nav {
-	// 	display: block;
-	// }
-	
-	// #logo {
-	// 	text-align: left;
-	// }
-}
-
-@media (min-width: 992px) {
-
-}
-
-@media (min-width: 1200px) {
-
-}

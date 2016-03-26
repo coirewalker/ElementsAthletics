@@ -1,10 +1,44 @@
-h1, h2, h3, h4, h5, p, a {
-	font-family: 'Playfair Display', serif;
+// variables 
+$primary-highlight-color: #E5234D;
+
+
+
+
+// copy
+h1, h2, h3, a {
+	// font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
+	font-family: 'Montserrat', helvetica, arial, sans-serif;
+	// font-family: 'Playfair Display', serif;
 	// font-family: 'Roboto Slab', serif;
-	letter-spacing: 1px;
+	letter-spacing: -1px;
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
 }
 
-$primary-highlight-color: #14CEE5;
+h4, h5, p {
+	font-family: 'HelveticaNeue', helvetica, arial, sans-serif;
+}
+
+
+// font sizing 
+h2 {
+	font-size: 2rem;
+}
+
+
+
+
+a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: .3s; /* Safari */
+	transition: .3s;
+	text-shadow: 1px 1px 8px #000;
+	&:hover {
+		color: $primary-highlight-color;
+		text-shadow: none;
+		text-decoration: none;
+	}
+}
