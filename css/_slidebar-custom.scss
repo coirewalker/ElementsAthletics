@@ -64,7 +64,7 @@ ul.navbar-nav {
 }
 
 .sb-menu li a {
-	width: 100%; /* Makes links full width. */
+	width: 94%; /* Makes links full width. */
 	display: inline-block;
 	padding: 1.22em; /* Creates an even padding the same size as your font. */
 	color: #fff;
@@ -74,6 +74,7 @@ ul.navbar-nav {
 	text-decoration: none;
 	background-color: rgba(255, 255, 255, 0.05); /* Will lighten any background colour you set. */
 }
+
 
 /* Borders */
 .sb-right .sb-menu li a {

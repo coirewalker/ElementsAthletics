@@ -210,10 +210,10 @@ html.sb-static .sb-slidebar,
 	     -o-transform: translate( 0px );
 	        transform: translate( 0px );
 	
-	-webkit-transition: -webkit-transform 400ms ease;
-	   -moz-transition:    -moz-transform 400ms ease;
-	     -o-transition:      -o-transform 400ms ease;
-	        transition:         transform 400ms ease;
+	-webkit-transition: -webkit-transform 190ms ease;
+	   -moz-transition:    -moz-transform 190ms ease;
+	     -o-transition:      -o-transform 190ms ease;
+	        transition:         transform 190ms ease;
 	
 	-webkit-transition-property: -webkit-transform, left, right; /* Add left/right for Android < 4.4. */
 	-webkit-backface-visibility: hidden; /* Prevents flickering. This is non essential, and you may remove it if your having problems with fixed background images in Chrome. */
