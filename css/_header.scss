@@ -1,5 +1,5 @@
 header {
-	height: 70px;
+	height: 60px;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -24,7 +24,7 @@ header {
 	}
 	li {
 		display: inline-block;
-		padding: 19px 18px;
+		padding: 15px 18px;
 		-webkit-transition: .3s; /* Safari */
     	transition: .3s;
 		&:hover {
@@ -68,7 +68,7 @@ header {
 
 /* ========== JS ========== */
 .hdr-scrolled {
-	background-color: rgba(0,0,0,.6);
+	background-color: rgba(255,255,255,.6);
 	-webkit-transition: .5s; /* Safari */
     transition: .5s;
     position: fixed;
@@ -76,11 +76,18 @@ header {
 }
 
 .nav-scrolled {
+	a {
+		color: #000;
+		-webkit-transition: .5s; /* Safari */
+    	transition: .5s;
+	}
 	li {
+		-webkit-transition: .5s; /* Safari */
+    	transition: .5s;
 		&:hover {
-			background-color: rgba(0,0,0,1);
+			background-color: $primary-highlight-color;
 			> a {
-				color: $primary-highlight-color;
+				color: #fff;
 			}
 		}
 	}	

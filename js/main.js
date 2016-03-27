@@ -2,7 +2,7 @@
 $(document).ready(function(){
 	
 	$.slidebars();
-	
+
 	$(window).scroll(function () {
 		if ($(window).outerWidth() > 768) {
 			var scroll_top = $(this).scrollTop();
@@ -16,10 +16,19 @@ $(document).ready(function(){
 		}
 	});	
 
-	if $('.sb-slidebar').hasClass('sb-active') {
-		$('.burger').hide();
+  // reset header on window resize
+	$(window).resize(function() {
+		if ($(window).outerWidth() < 769) {
+			$('header').removeClass('hdr-scrolled');
+			$('.desktop-nav').removeClass('nav-scrolled');
+		}
+	});
+
+	// can't get burger to hide yet...
+	if ($('.sb-slidebar').hasClass('sb-active')) {
+		$('.burger').addClass('hidden');
 	} else {
-		$('.burger').show();
+		$('.burger').removeClass('hidden');
 	}
 	
 });

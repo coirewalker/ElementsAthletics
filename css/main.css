@@ -19,15 +19,12 @@ a {
   /* Safari */
   transition: .3s; }
   a:hover {
-    color: #E5234D;
+    color: #E50E40;
     text-shadow: none;
     text-decoration: none; }
 
 .hidden {
   display: none; }
-
-html, body {
-  background-color: #222222; }
 
 #sb-site {
   box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
@@ -51,7 +48,7 @@ ul.navbar-nav {
   text-decoration: none; }
 
 .sb-slidebar a:hover {
-  color: #E5234D;
+  color: #E50E40;
   text-decoration: underline; }
 
 /* Main Menu */
@@ -112,7 +109,7 @@ ul.navbar-nav {
   background-position: right top; }
 
 header {
-  height: 70px;
+  height: 60px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -127,12 +124,12 @@ header {
     padding: 0; }
   .desktop-nav li {
     display: inline-block;
-    padding: 19px 18px;
+    padding: 15px 18px;
     -webkit-transition: .3s;
     /* Safari */
     transition: .3s; }
     .desktop-nav li:hover > a {
-      color: #E5234D; }
+      color: #E50E40; }
   .desktop-nav h2 {
     font-size: 2.2rem; }
 
@@ -153,22 +150,31 @@ header {
   /* Safari */
   transition: .3s; }
   .burger:hover {
-    color: #E5234D;
+    color: #E50E40;
     text-shadow: none; }
 
 /* ========== JS ========== */
 .hdr-scrolled {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   -webkit-transition: .5s;
   /* Safari */
   transition: .5s;
   position: fixed;
   top: 0; }
 
-.nav-scrolled li:hover {
-  background-color: black; }
-  .nav-scrolled li:hover > a {
-    color: #E5234D; }
+.nav-scrolled a {
+  color: #000;
+  -webkit-transition: .5s;
+  /* Safari */
+  transition: .5s; }
+.nav-scrolled li {
+  -webkit-transition: .5s;
+  /* Safari */
+  transition: .5s; }
+  .nav-scrolled li:hover {
+    background-color: #E50E40; }
+    .nav-scrolled li:hover > a {
+      color: #fff; }
 
 /* ========== Media ==========*/
 @media all and (min-width: 769px) {
@@ -177,21 +183,5 @@ header {
 
   .burger {
     display: none; } }
-footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.8); }
-  footer ul {
-    padding-top: 10px;
-    text-align: center; }
-    footer ul h4 {
-      margin: 0;
-      font-size: .78em; }
-    footer ul li {
-      color: #fff;
-      display: block;
-      list-style-type: none; }
 
 /*# sourceMappingURL=main.css.map */
