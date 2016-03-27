@@ -17,12 +17,14 @@ a {
   text-transform: uppercase;
   -webkit-transition: .3s;
   /* Safari */
-  transition: .3s;
-  text-shadow: 1px 1px 8px #000; }
+  transition: .3s; }
   a:hover {
     color: #E5234D;
     text-shadow: none;
     text-decoration: none; }
+
+.hidden {
+  display: none; }
 
 html, body {
   background-color: #222222; }
@@ -39,9 +41,9 @@ ul.navbar-nav {
 
 /* Slidebars */
 .sb-slidebar {
-  background-color: #222222;
+  background-color: #fff;
   /* Background colour. */
-  color: #e8e8e8;
+  color: #000;
   /* Text colour. */ }
 
 .sb-slidebar a {
@@ -82,7 +84,7 @@ ul.navbar-nav {
   display: inline-block;
   padding: 1.22em;
   /* Creates an even padding the same size as your font. */
-  color: #fff; }
+  color: #000; }
 
 .sb-menu li a:hover {
   text-decoration: none;
@@ -111,12 +113,10 @@ ul.navbar-nav {
 
 header {
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
-  width: 100%; }
-  header a {
-    text-shadow: none; }
+  width: 100%;
+  z-index: 99999; }
 
 .desktop-nav {
   text-align: center;
@@ -127,14 +127,12 @@ header {
     padding: 0; }
   .desktop-nav li {
     display: inline-block;
-    padding: 20px 18px;
+    padding: 19px 18px;
     -webkit-transition: .3s;
     /* Safari */
     transition: .3s; }
-    .desktop-nav li:hover {
-      background-color: black; }
-      .desktop-nav li:hover > a {
-        color: #E5234D; }
+    .desktop-nav li:hover > a {
+      color: #E5234D; }
   .desktop-nav h2 {
     font-size: 2.2rem; }
 
@@ -148,16 +146,29 @@ header {
 .burger {
   font-size: 35px;
   color: #fff;
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 25px;
-  text-shadow: 1px 1px 4px #000;
-  -webkit-transition: .5s;
+  -webkit-transition: .3s;
   /* Safari */
-  transition: .5s; }
+  transition: .3s; }
   .burger:hover {
     color: #E5234D;
     text-shadow: none; }
+
+/* ========== JS ========== */
+.hdr-scrolled {
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: .5s;
+  /* Safari */
+  transition: .5s;
+  position: fixed;
+  top: 0; }
+
+.nav-scrolled li:hover {
+  background-color: black; }
+  .nav-scrolled li:hover > a {
+    color: #E5234D; }
 
 /* ========== Media ==========*/
 @media all and (min-width: 769px) {

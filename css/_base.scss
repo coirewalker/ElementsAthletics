@@ -35,10 +35,18 @@ a {
 	text-transform: uppercase;
 	-webkit-transition: .3s; /* Safari */
 	transition: .3s;
-	text-shadow: 1px 1px 8px #000;
+	// text-shadow: 1px 1px 8px #000;
 	&:hover {
 		color: $primary-highlight-color;
 		text-shadow: none;
 		text-decoration: none;
 	}
+}
+
+
+
+
+// UTILITY CLASSES 
+.hidden {
+	display: none;
 }

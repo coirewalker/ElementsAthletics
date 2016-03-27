@@ -29,40 +29,41 @@
             </ul>
         </nav>  
     </div>
-    <header>
-        <div class="sb-toggle-right burger">&#9776;</div>    
-        <div class="desktop-nav">
-            <ul>
-                <li><a href="about.html"><h2>About</h2><a/></li>
-                <li><a href="classes.html"><h2>Classes</h2><a/></li>
-                <li><a href="coaches.html"><h2>Coaches</h2><a/></li>
-                <li><a href="membership.html"><h2>Membership</h2><a/></li>
-                <li><a href="contact.html"><h2>Contact</h2><a/></li>
-            </ul>
-        </div>
-    </header>
 
     <div id="sb-site">
         <div class="homepage-bg"></div>
-        
-        <div class="main">
-            <div class="row">
-                <div class="col-md-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quis in aspernatur perferendis sapiente accusamus esse fuga eius! Culpa voluptas veniam suscipit non aliquid tenetur, reprehenderit consequuntur eum delectus assumenda.
-                </div>
-                <div class="col-md-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, sint. Assumenda repudiandae ut voluptatibus sit unde, reiciendis suscipit, nihil aperiam ad alias nulla, non. Voluptates excepturi recusandae nesciunt quis suscipit!
-                </div>
+        <header>
+            <div class="sb-toggle-right burger">&#9776;</div>
+            <div class="desktop-nav">
+                <ul>
+                    <li class="selected"><a href="about.html"><h2>About</h2><a/></li>
+                    <li><a href="classes.html"><h2>Classes</h2><a/></li>
+                    <li><a href="coaches.html"><h2>Coaches</h2><a/></li>
+                    <li><a href="membership.html"><h2>Membership</h2><a/></li>
+                    <li><a href="contact.html"><h2>Contact</h2><a/></li>
+                </ul>
             </div>
-        </div>
+        </header>
 
+        <div class="main">
+            <!-- content -->
+        </div>
+            
     </div>
     
     
             
+    <!-- jQuery -->
     <script src="js/jquery-1.12.2.min.js"></script>
+    
+    <!-- Slidebars -->
     <script src="js/slidebars.js"></script>
-    <script src="js/main.js"></script>
-
+    <script>
+        (function($) {
+            $(document).ready(function() {
+                $.slidebars();
+            });
+        }) (jQuery);
+    </script>
 </body>
 

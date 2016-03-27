@@ -20,8 +20,8 @@ ul.navbar-nav {
 
 /* Slidebars */
 .sb-slidebar {
-	background-color: #222222; /* Background colour. */
-	color: #e8e8e8; /* Text colour. */
+	background-color: #fff; /* Background colour. */
+	color: #000; /* Text colour. */
 }
 
 .sb-slidebar a {
@@ -61,7 +61,7 @@ ul.navbar-nav {
 	width: 100%; /* Makes links full width. */
 	display: inline-block;
 	padding: 1.22em; /* Creates an even padding the same size as your font. */
-	color: #fff;
+	color: #000;
 }
 
 .sb-menu li a:hover {
