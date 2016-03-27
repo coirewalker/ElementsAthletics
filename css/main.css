@@ -6,10 +6,25 @@ h1, h2, h3, a {
   padding: 0; }
 
 h4, h5, p {
-  font-family: 'HelveticaNeue', helvetica, arial, sans-serif; }
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  letter-spacing: 0; }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 30px;
+  font-weight: 700; }
+
+h3 {
+  font-size: 22px; }
+
+h4 {
+  font-weight: 700; }
+
+p {
+  font-size: 1.15em; }
+
+ul {
+  color: #000;
+  padding: 0; }
 
 a {
   color: #fff;
@@ -25,6 +40,9 @@ a {
 
 .hidden {
   display: none; }
+
+.selected {
+  color: #E50E40; }
 
 #sb-site {
   box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
@@ -124,7 +142,7 @@ header {
     padding: 0; }
   .desktop-nav li {
     display: inline-block;
-    padding: 15px 18px;
+    padding: 18px 18px;
     -webkit-transition: .3s;
     /* Safari */
     transition: .3s; }
@@ -142,25 +160,25 @@ header {
 
 .burger {
   font-size: 35px;
-  color: #fff;
+  color: #E50E40;
   position: fixed;
   top: 10px;
   right: 25px;
   -webkit-transition: .3s;
   /* Safari */
   transition: .3s; }
-  .burger:hover {
-    color: #E50E40;
-    text-shadow: none; }
 
 /* ========== JS ========== */
 .hdr-scrolled {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   -webkit-transition: .5s;
   /* Safari */
   transition: .5s;
   position: fixed;
-  top: 0; }
+  top: 0;
+  -webkit-box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.38); }
 
 .nav-scrolled a {
   color: #000;
@@ -183,5 +201,201 @@ header {
 
   .burger {
     display: none; } }
+.coaches-main h1, .coaches-main h2, .coaches-main h3, .coaches-main h4, .coaches-main h5, .coaches-main a, .coaches-main p {
+  color: #000; }
+.coaches-main p {
+  text-transform: none; }
+.coaches-main h4 {
+  color: #E50E40; }
+
+.bio-name {
+  text-align: left;
+  padding-left: 20px; }
+
+.coach-img {
+  height: 100%;
+  width: 100%;
+  border: 5px solid #222;
+  margin-bottom: 30px; }
+
+.cert-list {
+  padding-left: 20px; }
+
+/*doc
+---
+title: Push
+name: Push
+category: Utilities
+---
+
+Default Example: The push class will apply across all breakpoints.
+
+```html_example
+<div class="push--10">Large 10</div>
+<div class="push--20">Large 20</div>
+<div class="push--30">Large 30</div>
+<div class="push--40">Large 40</div>
+```
+
+Multi Breakpoint Example: The Push classes will apply to their respective breakpoints
+Large: > 1024
+Medium: 640 -> 1024
+Small: < 640
+
+```html_example
+<div class="push--small-80 push--medium-30 push--large-10">Large 1</div>
+<div class="push--small-90 push--medium-40 push--large-20">Large 2</div>
+<div class="push--small-100 push--medium-50 push--large-30">Large 3</div>
+<div class="push--small-110 push--medium-60 push--large-40">Large 4</div>
+```
+
+Last Updated: 5/28/15 module: _push.scss
+*/
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--00,
+.push--large-00 {
+  margin-top: 00px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--10,
+.push--large-10 {
+  margin-top: 10px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--20,
+.push--large-20 {
+  margin-top: 20px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--30,
+.push--large-30 {
+  margin-top: 30px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--40,
+.push--large-40 {
+  margin-top: 40px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--50,
+.push--large-50 {
+  margin-top: 50px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--60,
+.push--large-60 {
+  margin-top: 60px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--70,
+.push--large-70 {
+  margin-top: 70px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--80,
+.push--large-80 {
+  margin-top: 80px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--90,
+.push--large-90 {
+  margin-top: 90px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--100,
+.push--large-100 {
+  margin-top: 100px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--110,
+.push--large-110 {
+  margin-top: 110px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--120,
+.push--large-120 {
+  margin-top: 120px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--130,
+.push--large-130 {
+  margin-top: 130px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--140,
+.push--large-140 {
+  margin-top: 140px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--150,
+.push--large-150 {
+  margin-top: 150px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--160,
+.push--large-160 {
+  margin-top: 160px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--170,
+.push--large-170 {
+  margin-top: 170px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--180,
+.push--large-180 {
+  margin-top: 180px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--190,
+.push--large-190 {
+  margin-top: 190px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--200,
+.push--large-200 {
+  margin-top: 200px; }
 
 /*# sourceMappingURL=main.css.map */

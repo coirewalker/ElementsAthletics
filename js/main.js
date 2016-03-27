@@ -23,6 +23,13 @@ $(document).ready(function(){
 			$('.desktop-nav').removeClass('nav-scrolled');
 		}
 	});
+	// $(window).resize(function() {
+	// 	if ($(window).innerWidth() < 769) {
+	// 		$('.desktop-nav').addClass('hidden');
+	// 	} else {
+	// 		$('.desktop-nav').removeClass('hidden');
+	// 	}
+	// });
 
 	// can't get burger to hide yet...
 	if ($('.sb-slidebar').hasClass('sb-active')) {
