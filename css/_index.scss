@@ -9,6 +9,24 @@
 	width: 100%;
 	z-index: -1;
   	background-position: right top;
+  	opacity: .75;
 }
 
+.elements-logo-main {
+	background: url('../images/logo-white.png');
+	background-size: contain;
+	background-repeat: none;
+  	position: absolute;
+  	top: 30%;
+  	left: 50%;
+  	transform: translateY(-50%);
+  	transform: translateX(-50%);
+	height: 250px;
+	width: 250px;
+	z-index: 2;
+}
 
+.hero {
+	margin: 0 auto;
+	
+}

@@ -1,7 +1,14 @@
-
+.nav-logo {
+	height: 80px;
+	width: 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 #sb-site {
 	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3); /* Shadow cast onto the slidebars when opened. */
+	background-color: #000;
 }
 
 .sb-toggle-right {
@@ -15,11 +22,14 @@ ul.navbar-nav {
 
 
 
-
 /* Slidebars */
 .sb-slidebar {
 	background-color: #fff; /* Background colour. */
 	color: #000; /* Text colour. */
+	h3 {
+		font-size: 1.7em;
+		font-weight: 400;
+	}
 }
 
 .sb-slidebar a {
@@ -34,7 +44,7 @@ ul.navbar-nav {
 
 /* Main Menu */
 .sb-menu { /* Apply to <ul> or <ol>. */
-	padding: 20px;
+	padding: 50px 20px 20px 20px;
 	margin: 0;
 	list-style-type: none;
 }
@@ -76,4 +86,42 @@ ul.navbar-nav {
 .sb-right .sb-menu li a:hover {
 	border-right: 3px solid; /* Removes transparent colour, so border colour will be the same as link hover colour. */
 }
+
+
+
+// MEDIA QUERIES 
+@media all and (min-width: 320px) {
+	.nav-logo {
+		height: 70px;
+		width: 70px;
+	}
+	.sb-slidebar h3 {
+		font-size: 1.1em;
+	}
+	.sb-menu li a {
+		padding: 1.22em 1.22em 1.22em 0;
+	}
+}
+
+@media all and (min-width: 768px) {
+	.nav-logo {
+		height: 100px;
+		width: 100px;
+	}
+	.sb-slidebar h3 {
+		font-size: 1.7em;
+	}
+	.sb-menu li a {
+		padding: 1.22em;
+	}
+}
+
+
+
+
+
+
+
+
+
 

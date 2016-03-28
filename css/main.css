@@ -1,7 +1,6 @@
 h1, h2, h3, a {
   font-family: 'Montserrat', helvetica, arial, sans-serif;
   letter-spacing: -1px;
-  font-weight: 400;
   margin: 0;
   padding: 0; }
 
@@ -10,11 +9,12 @@ h4, h5, p {
   letter-spacing: 0; }
 
 h2 {
-  font-size: 30px;
+  font-size: 2.2em;
   font-weight: 700; }
 
 h3 {
-  font-size: 22px; }
+  font-size: 1.5em;
+  font-weight: 400; }
 
 h4 {
   font-weight: 700; }
@@ -27,7 +27,7 @@ ul {
   padding: 0; }
 
 a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: .3s;
@@ -38,15 +38,31 @@ a {
     text-shadow: none;
     text-decoration: none; }
 
+#sb-site {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
 .hidden {
   display: none; }
+
+.show {
+  display: block; }
 
 .selected {
   color: #E50E40; }
 
+.nav-logo {
+  height: 80px;
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 #sb-site {
   box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
-  /* Shadow cast onto the slidebars when opened. */ }
+  /* Shadow cast onto the slidebars when opened. */
+  background-color: #000; }
 
 .sb-toggle-right {
   cursor: pointer; }
@@ -60,6 +76,9 @@ ul.navbar-nav {
   /* Background colour. */
   color: #000;
   /* Text colour. */ }
+  .sb-slidebar h3 {
+    font-size: 1.7em;
+    font-weight: 400; }
 
 .sb-slidebar a {
   text-transform: uppercase;
@@ -72,7 +91,7 @@ ul.navbar-nav {
 /* Main Menu */
 .sb-menu {
   /* Apply to <ul> or <ol>. */
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
   margin: 0;
   list-style-type: none; }
 
@@ -114,6 +133,26 @@ ul.navbar-nav {
   border-right: 3px solid;
   /* Removes transparent colour, so border colour will be the same as link hover colour. */ }
 
+@media all and (min-width: 320px) {
+  .nav-logo {
+    height: 70px;
+    width: 70px; }
+
+  .sb-slidebar h3 {
+    font-size: 1.1em; }
+
+  .sb-menu li a {
+    padding: 1.22em 1.22em 1.22em 0; } }
+@media all and (min-width: 768px) {
+  .nav-logo {
+    height: 100px;
+    width: 100px; }
+
+  .sb-slidebar h3 {
+    font-size: 1.7em; }
+
+  .sb-menu li a {
+    padding: 1.22em; } }
 .homepage-bg {
   background: url("../images/bg.jpg");
   background-size: cover;
@@ -124,7 +163,24 @@ ul.navbar-nav {
   height: 100vh;
   width: 100%;
   z-index: -1;
-  background-position: right top; }
+  background-position: right top;
+  opacity: .75; }
+
+.elements-logo-main {
+  background: url("../images/logo-white.png");
+  background-size: contain;
+  background-repeat: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  height: 250px;
+  width: 250px;
+  z-index: 2; }
+
+.hero {
+  margin: 0 auto; }
 
 header {
   height: 60px;
@@ -136,20 +192,27 @@ header {
 .desktop-nav {
   text-align: center;
   display: none; }
+  .desktop-nav .desk-nav-logo {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    display: none; }
   .desktop-nav ul {
     margin: 0 auto;
     margin-top: 0;
     padding: 0; }
   .desktop-nav li {
     display: inline-block;
-    padding: 18px 18px;
+    padding: 19px 18px;
     -webkit-transition: .3s;
     /* Safari */
     transition: .3s; }
+    .desktop-nav li a {
+      color: #fff; }
     .desktop-nav li:hover > a {
       color: #E50E40; }
-  .desktop-nav h2 {
-    font-size: 2.2rem; }
 
 .logo {
   background: url("../images/logo.jpg") no-repeat;
@@ -170,7 +233,7 @@ header {
 
 /* ========== JS ========== */
 .hdr-scrolled {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: .5s;
   /* Safari */
   transition: .5s;
@@ -179,16 +242,18 @@ header {
   -webkit-box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.38);
   -moz-box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.38);
   box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.38); }
+  .hdr-scrolled .desk-nav-logo {
+    display: block; }
 
-.nav-scrolled a {
-  color: #000;
-  -webkit-transition: .5s;
-  /* Safari */
-  transition: .5s; }
 .nav-scrolled li {
   -webkit-transition: .5s;
   /* Safari */
   transition: .5s; }
+  .nav-scrolled li a {
+    color: #333;
+    -webkit-transition: .5s;
+    /* Safari */
+    transition: .5s; }
   .nav-scrolled li:hover {
     background-color: #E50E40; }
     .nav-scrolled li:hover > a {
@@ -201,6 +266,9 @@ header {
 
   .burger {
     display: none; } }
+.homepage-header-height {
+  height: auto; }
+
 .coaches-main h1, .coaches-main h2, .coaches-main h3, .coaches-main h4, .coaches-main h5, .coaches-main a, .coaches-main p {
   color: #000; }
 .coaches-main p {
