@@ -8,7 +8,6 @@
 
 #sb-site {
 	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3); /* Shadow cast onto the slidebars when opened. */
-	background-color: #000;
 }
 
 .sb-toggle-right {
@@ -103,11 +102,17 @@ ul.navbar-nav {
 	}
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 500px) {
 	.nav-logo {
 		height: 100px;
 		width: 100px;
 	}
+	.sb-slidebar h3 {
+		font-size: 1.3em;
+	}
+}
+
+@media all and (min-width: 768px) {
 	.sb-slidebar h3 {
 		font-size: 1.7em;
 	}
@@ -115,7 +120,6 @@ ul.navbar-nav {
 		padding: 1.22em;
 	}
 }
-
 
 
 

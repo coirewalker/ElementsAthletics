@@ -9,15 +9,14 @@
 	width: 100%;
 	z-index: -1;
   	background-position: right top;
-  	opacity: .75;
 }
 
 .elements-logo-main {
-	background: url('../images/logo-white.png');
+	background: url('../images/logo-white-alt.png');
 	background-size: contain;
 	background-repeat: none;
   	position: absolute;
-  	top: 30%;
+  	top: 47%;
   	left: 50%;
   	transform: translateY(-50%);
   	transform: translateX(-50%);
@@ -28,5 +27,35 @@
 
 .hero {
 	margin: 0 auto;
-	
+	position: absolute;
+	bottom: 5%;
+  	left: 50%;
+  	transform: translateY(-50%);
+  	transform: translateX(-50%);
+  	width: 100%;
+  	max-width: 500px;
+  	h4 {
+  		// font-family: 'Playfair Display', serif; 
+  		// font-weight: 700; 	
+  		color: #fff;
+  		text-transform: none;
+  		text-align: center;
+  		text-shadow: $text-shadow;
+  	}
+  	h3 {
+  		font-family: 'Playfair Display', serif; 
+  		font-weight: 700;
+  		letter-spacing: 1px;
+  	}
+  	ul {
+  		display: block;
+  		text-align: center;
+  	}
+  	li {
+  		color: #fff;
+  		display: inline-block; 
+  		text-align: center;
+  		list-style-type: none;
+  		text-shadow: $text-shadow;
+  	}
 }
