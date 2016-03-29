@@ -24,6 +24,8 @@ footer {
 		display: inline-block;
 		color: #fff;
 		list-style-type: none;
+		-webkit-transition: .3s; /* Safari */
+    	transition: .3s;
 	}
 }
 
@@ -37,8 +39,11 @@ footer {
 		padding-left: 10px;
 		a {
 			color: #fff;
+			-webkit-transition: .3s; /* Safari */
+    		transition: .3s;
 			&:hover {
-				color: $primary-highlight-color;
+				color: #fff;
+				opacity: .7;
 			}
 		}
 	}
@@ -47,17 +52,31 @@ footer {
 .footer-social-wrap {
 	ul {
 		text-align: center;
-		background-color: white; //temp
 	}
 	li {
 		padding: 0 5px;
+		&:hover {
+			opacity: .7;
+		}
 	}
 }
+
+
 
 
 // MEDIA QUERIES 
 @media all and (min-width: 768px) {
 	footer {
 		height: 140px;
+	}
+	.footer-social-wrap {
+		ul {
+			text-align: center;
+		}
+	.footer-address-wrap {
+		li {
+			text-align: left;
+		}
+	}
 	}
 }

@@ -402,7 +402,10 @@ footer {
 .footer-logo-wrap li, .footer-social-wrap li {
   display: inline-block;
   color: #fff;
-  list-style-type: none; }
+  list-style-type: none;
+  -webkit-transition: .3s;
+  /* Safari */
+  transition: .3s; }
 
 .footer-address-wrap ul {
   text-align: center; }
@@ -411,19 +414,29 @@ footer {
   color: #fff;
   padding-left: 10px; }
   .footer-address-wrap li a {
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: .3s;
+    /* Safari */
+    transition: .3s; }
     .footer-address-wrap li a:hover {
-      color: #E50E40; }
+      color: #fff;
+      opacity: .7; }
 
 .footer-social-wrap ul {
-  text-align: center;
-  background-color: white; }
+  text-align: center; }
 .footer-social-wrap li {
   padding: 0 5px; }
+  .footer-social-wrap li:hover {
+    opacity: .7; }
 
 @media all and (min-width: 768px) {
   footer {
-    height: 140px; } }
+    height: 140px; }
+
+  .footer-social-wrap ul {
+    text-align: center; }
+  .footer-social-wrap .footer-address-wrap li {
+    text-align: left; } }
 /*doc
 ---
 title: Push
