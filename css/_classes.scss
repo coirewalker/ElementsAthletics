@@ -1,3 +1,25 @@
+// SCHEDULE 
+.schedule-main {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	h2 {
+		color: #000;
+	}	
+}
+
+.class-schedule {
+	height: auto;
+	width: 100%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+	transform: translateX(-50%);
+}
+
+
+// CLASSES 
 .classes-main {
 	max-width: 1080px;
 	margin: 0 auto;

@@ -64,6 +64,28 @@ a {
   clear: both;
   width: 100%; }
 
+.modal {
+  background-color: none; }
+
+.modal-body {
+  padding: 0; }
+
+.modal-dialog {
+  width: 100%;
+  margin-top: 60px; }
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0; }
+  .modal-header h4 {
+    text-align: center; }
+
+.modal-footer {
+  border-top: none; }
+
+.close {
+  font-size: 40px; }
+
 .nav-logo {
   height: 80px;
   width: 80px;
@@ -189,7 +211,7 @@ ul.navbar-nav {
   background-size: contain;
   background-repeat: none;
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translateY(-50%);
   transform: translateX(-50%);
@@ -199,23 +221,30 @@ ul.navbar-nav {
 .hero {
   margin: 0 auto;
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 50%;
   transform: translateY(-50%);
   transform: translateX(-50%);
   width: 100%;
   max-width: 500px; }
   .hero h4 {
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
     color: #fff;
     text-transform: none;
-    text-align: center; }
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400; }
   .hero h3 {
     font-family: 'Lora', serif;
+    letter-spacing: 0;
     font-weight: 700;
-    letter-spacing: 1px; }
+    line-height: 0;
+    font-size: 19px; }
   .hero ul {
     display: block;
-    text-align: center; }
+    text-align: center;
+    margin: 0;
+    padding: 0; }
   .hero li {
     color: #fff;
     display: inline-block;
@@ -231,7 +260,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 99999; }
+  z-index: 2; }
 
 .desktop-nav {
   text-align: center;
@@ -343,6 +372,22 @@ header {
 .cert-list {
   padding-left: 20px; }
 
+.schedule-main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 50px; }
+  .schedule-main h2 {
+    color: #000; }
+
+.class-schedule {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%); }
+
 .classes-main {
   max-width: 1080px;
   margin: 0 auto;
@@ -412,12 +457,15 @@ footer {
 .footer-address-wrap li {
   list-style-type: none;
   color: #fff;
-  padding-left: 10px; }
+  font-family: 'Lora', serif; }
   .footer-address-wrap li a {
     color: #fff;
     -webkit-transition: .3s;
     /* Safari */
-    transition: .3s; }
+    transition: .3s;
+    text-transform: none;
+    line-height: 30px;
+    font-size: 13px; }
     .footer-address-wrap li a:hover {
       color: #fff;
       opacity: .7; }
@@ -427,6 +475,14 @@ footer {
 .footer-social-wrap li {
   padding: 0 5px; }
   .footer-social-wrap li:hover {
+    opacity: .7; }
+.footer-social-wrap a {
+  color: #fff;
+  -webkit-transition: .3s;
+  /* Safari */
+  transition: .3s; }
+  .footer-social-wrap a:hover {
+    color: #fff;
     opacity: .7; }
 
 @media all and (min-width: 768px) {

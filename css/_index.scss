@@ -17,7 +17,7 @@
     background-size: contain;
     background-repeat: none;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
@@ -28,29 +28,34 @@
 .hero {
 	margin: 0 auto;
 	position: absolute;
-	top: 70%;
+	top: 75%;
   	left: 50%;
   	transform: translateY(-50%);
   	transform: translateX(-50%);
   	width: 100%;
   	max-width: 500px;
   	h4 {
-  		// font-family: 'Playfair Display', serif; 
-  		// font-weight: 700; 	
+        font-family: 'Montserrat', helvetica, arial, sans-serif;
   		color: #fff;
   		text-transform: none;
   		text-align: center;
+        font-size: 16px;
+        font-weight: 400;
   		@extend .text-shadow;
   	}
   	h3 {
-  		// font-family: 'Playfair Display', serif; 
+        // font-family: 'Alegreya', serif;
   		font-family: 'Lora', serif;
+        letter-spacing: 0;
   		font-weight: 700;
-  		letter-spacing: 1px;
+  		line-height: 0;
+        font-size: 19px;
   	}
   	ul {
   		display: block;
   		text-align: center;
+        margin: 0;
+        padding: 0;
   	}
   	li {
   		color: #fff;

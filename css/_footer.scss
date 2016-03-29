@@ -36,11 +36,14 @@ footer {
 	li {
 		list-style-type: none;
 		color: #fff;
-		padding-left: 10px;
+  		font-family: 'Lora', serif;
 		a {
 			color: #fff;
 			-webkit-transition: .3s; /* Safari */
     		transition: .3s;
+    		text-transform: none;
+    		line-height: 30px;
+    		font-size: 13px;
 			&:hover {
 				color: #fff;
 				opacity: .7;
@@ -56,6 +59,15 @@ footer {
 	li {
 		padding: 0 5px;
 		&:hover {
+			opacity: .7;
+		}
+	}
+	a {
+		color: #fff;
+		-webkit-transition: .3s; /* Safari */
+		transition: .3s;
+		&:hover {
+			color: #fff;
 			opacity: .7;
 		}
 	}

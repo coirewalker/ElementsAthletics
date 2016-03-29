@@ -14,9 +14,28 @@
     <link href="css/vender/slidebars.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
 </head> 
-<body>
 
 <body>  
+    <!-- Modal -->
+    <div class="modal fade" id="schedule-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Current Class Schedule</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <img class="class-schedule" src="images/schedule.png" alt="class schedule" data-toggle="modal" data-target="#schedule-modal">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="sb-slidebar sb-right sb-style-push sb-width-custom" data-sb-width="45%">
         <nav class="navbar stroke">
             <ul class="sb-menu">
@@ -43,10 +62,35 @@
         </div>
     </header>
 
-    <div id="sb-site">        
-        <!-- CLASSES PAGE MODULE -->
+    <div id="sb-site">     
+        
+        <!-- SCHEDULE -->
+        <div class="schedule-main">
+            <div class="col-sm-12 push--50 text-center"> 
+                <h2>&#183; Schedule &#183;</h2>
+            </div>
+            
+            <div class="classes-item col-sm-12">
+                <div class="push--40"></div>
+
+                <div class="col-xsm-12 col-sm-12">
+                    <div class="classes-hero">
+                        <div>
+                            <img class="class-schedule" src="images/schedule.png" alt="class schedule" data-toggle="modal" data-target="#schedule-modal">
+                        </div>
+                    </div> 
+                </div>
+            </div><!-- /classes-item -->
+        </div>
+        <!-- END SCHEDULE -->
+
+        <!-- CLASSES PAGE -->
         <div class="classes-main">
-            <div class="col-sm-12 push--50 text-center"><h2>&#183;  Classes &#183; </h2></div>
+            <div class="col-sm-12"><div class="col-sm-12"><hr></div></div>
+
+            <div class="col-sm-12 push--50 text-center">
+                <h2>&#183; Classes &#183;</h2>
+            </div>
             
             <div class="classes-item col-sm-12">
                 <div class="push--40"></div>
@@ -123,10 +167,9 @@
                 </div>
             </div><!-- /classes-item -->
 
-        </div><!-- /coaches-main -->
+        </div><!-- /classes-main -->
         <!-- end CLASSES MODULE -->      
 
-       <!-- FOOTER -->
         <footer> 
             <div class="footer-logo-wrap col-xsm-12 col-sm-4 col-sm-push-4">
                 <div><img  class="footer-logo" src="images/logo-white.png" alt="elements footer logo"></div>
@@ -134,7 +177,7 @@
                 
             <div class="footer-address-wrap col-xsm-12 col-sm-4 col-sm-pull-4">
                 <ul>
-                    <li>587 Franklin Avenue,</li>
+                    <li>587 Franklin Avenue</li>
                     <li>Brooklyn, NY 11238</li>
                     <li>(917)855-4905</li>
                     <li><a href="#">elementsathletics@gmail.com</a></li>
@@ -143,10 +186,10 @@
 
             <div class="footer-social-wrap col-xsm-12 col-sm-4 push--20">
                 <ul>
-                    <li><i class="fa fa-2x fa-twitter-square" alt="twitter"></i></li>
-                    <li><i class="fa fa-2x fa-facebook-square" alt="facebook"></i></li>
-                    <li><i class="fa fa-2x fa-instagram" alt="instagram"></i></li>
-                    <li><i class="fa fa-2x fa-yelp" alt="yelp"></i></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-2x fa-twitter-square" alt="twitter"></i><a/></li>
+                    <li><a href="https://www.facebook.com/elementsathleticsbrooklyn" target="_blank"><i class="fa fa-2x fa-facebook-square" alt="facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/elementsathleticsbrooklyn/" target="_blank"><i class="fa fa-2x fa-instagram" alt="instagram"></i></a></li>
+                    <li><a href="https://www.yelp.com/biz/elements-athletics-brooklyn-2" target="_blank"><i class="fa fa-2x fa-yelp" alt="yelp"></i><a/></li>
                 </ul>
             </div>
         </footer>
