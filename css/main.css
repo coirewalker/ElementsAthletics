@@ -88,14 +88,15 @@ ul.navbar-nav {
   color: #000;
   /* Text colour. */ }
   .sb-slidebar h3 {
-    font-size: 1.7em;
-    font-weight: 400; }
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0; }
 
 .sb-slidebar a {
   text-transform: uppercase;
   text-decoration: none; }
 
-.sb-slidebar a:hover {
+.sb-slidebar a:hover, .sb-slidebar a:active {
   color: #E50E40;
   text-decoration: underline; }
 
@@ -150,10 +151,16 @@ ul.navbar-nav {
     width: 70px; }
 
   .sb-slidebar h3 {
-    font-size: 1.1em; }
+    font-size: 1em; }
 
   .sb-menu li a {
     padding: 1.22em 1.22em 1.22em 0; } }
+@media all and (min-width: 375px) {
+  .sb-menu li a {
+    padding: 1.22em 1.22em 1.22em .8em; }
+
+  .sb-slidebar h3 {
+    font-size: 1.1em; } }
 @media all and (min-width: 500px) {
   .nav-logo {
     height: 100px;
@@ -163,10 +170,7 @@ ul.navbar-nav {
     font-size: 1.3em; } }
 @media all and (min-width: 768px) {
   .sb-slidebar h3 {
-    font-size: 1.7em; }
-
-  .sb-menu li a {
-    padding: 1.22em; } }
+    font-size: 1.7em; } }
 .homepage-bg {
   background: url("../images/bg.jpg");
   background-size: cover;
@@ -323,6 +327,8 @@ header {
 
 .coach-item {
   padding-bottom: 10px; }
+  .coach-item h3 {
+    font-weight: 700; }
 
 .bio-name {
   text-align: left;
@@ -362,7 +368,8 @@ header {
   transform: translateX(-50%); }
   .classes-hero h3 {
     text-align: center;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    font-weight: 700; }
 
 .classes-logo {
   height: 90px;

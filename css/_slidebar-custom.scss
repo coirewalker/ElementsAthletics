@@ -26,8 +26,9 @@ ul.navbar-nav {
 	background-color: #fff; /* Background colour. */
 	color: #000; /* Text colour. */
 	h3 {
-		font-size: 1.7em;
-		font-weight: 400;
+		font-size: 1em;
+		font-weight: 700;
+		letter-spacing: 0;
 	}
 }
 
@@ -36,7 +37,7 @@ ul.navbar-nav {
 	text-decoration: none;
 }
 
-.sb-slidebar a:hover {
+.sb-slidebar a:hover, .sb-slidebar a:active {
 	color: $primary-highlight-color; 
 	text-decoration: underline;
 }
@@ -95,10 +96,19 @@ ul.navbar-nav {
 		width: 70px;
 	}
 	.sb-slidebar h3 {
-		font-size: 1.1em;
+		font-size: 1em;
 	}
 	.sb-menu li a {
 		padding: 1.22em 1.22em 1.22em 0;
+	}
+}
+
+@media all and (min-width: 375px) {
+	.sb-menu li a {
+		padding: 1.22em 1.22em 1.22em .8em;
+	}
+	.sb-slidebar h3 {
+		font-size: 1.1em;
 	}
 }
 
@@ -115,9 +125,6 @@ ul.navbar-nav {
 @media all and (min-width: 768px) {
 	.sb-slidebar h3 {
 		font-size: 1.7em;
-	}
-	.sb-menu li a {
-		padding: 1.22em;
 	}
 }
 
