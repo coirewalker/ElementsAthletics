@@ -60,6 +60,10 @@ a {
   min-height: 20px;
   width: 100%; }
 
+.hr--clear {
+  clear: both;
+  width: 100%; }
+
 .nav-logo {
   height: 80px;
   width: 80px;
@@ -303,6 +307,8 @@ header {
   height: auto; }
 
 .coaches-main {
+  margin: 0 auto;
+  max-width: 1080px;
   padding-bottom: 50px; }
   .coaches-main h1, .coaches-main h2, .coaches-main h3, .coaches-main h4, .coaches-main h5, .coaches-main a, .coaches-main p {
     color: #000; }
@@ -326,6 +332,42 @@ header {
 
 .cert-list {
   padding-left: 20px; }
+
+.classes-main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 50px; }
+  .classes-main h1, .classes-main h2, .classes-main h3, .classes-main h4, .classes-main h5, .classes-main a, .classes-main p {
+    color: #000; }
+  .classes-main p {
+    text-transform: none; }
+  .classes-main h4 {
+    color: #E50E40; }
+
+.classes-item {
+  padding-bottom: 10px; }
+
+.classes-hero-wrap {
+  position: relative; }
+
+.classes-hero {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%); }
+  .classes-hero h3 {
+    text-align: center;
+    padding-bottom: 30px; }
+
+.classes-logo {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%); }
 
 footer {
   width: 100%;
