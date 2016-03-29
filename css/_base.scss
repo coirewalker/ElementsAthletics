@@ -81,3 +81,9 @@ a {
 .selected {
 	color: $primary-highlight-color;
 }
+
+.spacer {
+	clear: both;
+	min-height: 20px;
+	width: 100%;
+}

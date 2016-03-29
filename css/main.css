@@ -55,6 +55,11 @@ a {
 .selected {
   color: #E50E40; }
 
+.spacer {
+  clear: both;
+  min-height: 20px;
+  width: 100%; }
+
 .nav-logo {
   height: 80px;
   width: 80px;
@@ -297,12 +302,17 @@ header {
 .homepage-header-height {
   height: auto; }
 
-.coaches-main h1, .coaches-main h2, .coaches-main h3, .coaches-main h4, .coaches-main h5, .coaches-main a, .coaches-main p {
-  color: #000; }
-.coaches-main p {
-  text-transform: none; }
-.coaches-main h4 {
-  color: #E50E40; }
+.coaches-main {
+  padding-bottom: 50px; }
+  .coaches-main h1, .coaches-main h2, .coaches-main h3, .coaches-main h4, .coaches-main h5, .coaches-main a, .coaches-main p {
+    color: #000; }
+  .coaches-main p {
+    text-transform: none; }
+  .coaches-main h4 {
+    color: #E50E40; }
+
+.coach-item {
+  padding-bottom: 10px; }
 
 .bio-name {
   text-align: left;
@@ -318,13 +328,11 @@ header {
   padding-left: 20px; }
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  height: 280px;
+  height: 300px;
   background-color: #000;
   padding-top: 30px;
-  padding-bottom: 20px; }
+  clear: both; }
 
 .footer-logo {
   position: relative;

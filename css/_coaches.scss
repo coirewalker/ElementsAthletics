@@ -1,10 +1,8 @@
 // temp override for strange hover change with anchor
 .coaches-main {
+	padding-bottom: 50px;
 	h1, h2, h3, h4, h5, a, p {
 		color: #000;
-		// &:hover {
-		// 	color: #000;
-		// }
 	}
 	p {
 		text-transform: none;
@@ -12,6 +10,9 @@
 	h4 {
 		color: $primary-highlight-color;
 	}
+}
+.coach-item {
+	padding-bottom: 10px;
 }
 
 .bio-name {
