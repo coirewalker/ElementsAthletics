@@ -1,34 +1,34 @@
 .homepage-bg {
-	background: url('../images/bg.jpg');
-	background-size: cover;
-	position: relative;
-	background-repeat: none;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100%;
-	z-index: -1;
-  	background-position: right top;
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    position: relative;
+    background-repeat: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background-position: center top;
+    opacity: .9;
 }
 
 .elements-logo-main {
-	background: url('../images/logo-white-alt.png');
-	background-size: contain;
-	background-repeat: none;
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
-	height: 250px;
-	width: 250px;
-	z-index: 2;
+    background: url('../images/logo-white-alt.png');
+    background-size: contain;
+    background-repeat: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    height: 175px;
+    width: 175px;
 }
 
 .hero {
 	margin: 0 auto;
 	position: absolute;
-	bottom: 5%;
+	top: 70%;
   	left: 50%;
   	transform: translateY(-50%);
   	transform: translateX(-50%);
@@ -59,4 +59,15 @@
   		list-style-type: none;
   		@extend .text-shadow;
   	}
+}
+
+
+
+
+// MEDIA QUERIES 
+@media all and (min-width: 769px) {
+    .elements-logo-main {
+        height: 210px;
+        width: 210px;
+    }
 }
