@@ -1,68 +1,543 @@
-/*
-Error: Invalid CSS after "...ow: text-shadow": expected selector or at-rule, was ": 2px 2px 2px r..."
-        on line 5 of css/_base.scss
-        from line 1 of css/main.scss
+.text-shadow, .hero h4, .hero li {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
 
-1: // variables 
-2: $primary-highlight-color: #E50E40;
-3: $primary-text-color-dark: #333;
-4: $primary-text-color-light: #fff;
-5: $text-shadow: text-shadow: 2px 2px 2px rgba(000, 000, 000, .5);
-6: 
-7: 
-8: 
-9: // Fonts
-10: h1, h2, h3, a {
+h1, h2, h3, a {
+  font-family: 'Montserrat', helvetica, arial, sans-serif;
+  letter-spacing: -1px;
+  margin: 0;
+  padding: 0; }
 
-Backtrace:
-css/_base.scss:5
-css/main.scss:1
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/scss/parser.rb:40:in `parse'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/engine.rb:309:in `to_tree'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/stack.rb:88:in `block in with_import'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/stack.rb:88:in `with_import'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/coirewalker1/.rvm/gems/ruby-2.1.2/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+h4, h5, p {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  letter-spacing: 0; }
+
+h2 {
+  font-size: 2.2em;
+  font-weight: 700; }
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 400; }
+
+h4 {
+  font-weight: 700; }
+
+p {
+  font-size: 1.15em; }
+
+ul {
+  color: #000;
+  padding: 0; }
+
+a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  /* Safari */
+  transition: .3s; }
+  a:hover {
+    color: #E50E40;
+    text-shadow: none;
+    text-decoration: none; }
+
+#sb-site {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.hidden {
+  display: none; }
+
+.show {
+  display: block; }
+
+.selected {
+  color: #E50E40; }
+
+.nav-logo {
+  height: 80px;
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#sb-site {
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
+  /* Shadow cast onto the slidebars when opened. */ }
+
+.sb-toggle-right {
+  cursor: pointer; }
+
+ul.navbar-nav {
+  display: none; }
+
+/* Slidebars */
+.sb-slidebar {
+  background-color: #fff;
+  /* Background colour. */
+  color: #000;
+  /* Text colour. */ }
+  .sb-slidebar h3 {
+    font-size: 1.7em;
+    font-weight: 400; }
+
+.sb-slidebar a {
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.sb-slidebar a:hover {
+  color: #E50E40;
+  text-decoration: underline; }
+
+/* Main Menu */
+.sb-menu {
+  /* Apply to <ul> or <ol>. */
+  padding: 50px 20px 20px 20px;
+  margin: 0;
+  list-style-type: none; }
+
+.sb-menu li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* Will lighten any background colour you set. */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* Will darken any background colour you set. */ }
+
+.sb-menu > li:first-child {
+  border-top: none;
+  /* Removes top border from first list item.. */ }
+
+.sb-menu > li:last-child {
+  border-bottom: none;
+  /* Removed bottom border from last list item. */ }
+
+.sb-menu li a {
+  width: 100%;
+  /* Makes links full width. */
+  display: inline-block;
+  padding: 1.22em;
+  /* Creates an even padding the same size as your font. */
+  color: #000; }
+
+.sb-menu li a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.02);
+  /* Will lighten any background colour you set. */ }
+
+/* Borders */
+.sb-right .sb-menu li a {
+  border-right: 3px solid transparent; }
+
+.sb-right .sb-menu li a:hover {
+  border-right: 3px solid;
+  /* Removes transparent colour, so border colour will be the same as link hover colour. */ }
+
+@media all and (min-width: 320px) {
+  .nav-logo {
+    height: 70px;
+    width: 70px; }
+
+  .sb-slidebar h3 {
+    font-size: 1.1em; }
+
+  .sb-menu li a {
+    padding: 1.22em 1.22em 1.22em 0; } }
+@media all and (min-width: 500px) {
+  .nav-logo {
+    height: 100px;
+    width: 100px; }
+
+  .sb-slidebar h3 {
+    font-size: 1.3em; } }
+@media all and (min-width: 768px) {
+  .sb-slidebar h3 {
+    font-size: 1.7em; }
+
+  .sb-menu li a {
+    padding: 1.22em; } }
+.homepage-bg {
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  position: relative;
+  background-repeat: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background-position: right top; }
+
+.elements-logo-main {
+  background: url("../images/logo-white-alt.png");
+  background-size: contain;
+  background-repeat: none;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  height: 250px;
+  width: 250px;
+  z-index: 2; }
+
+.hero {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px; }
+  .hero h4 {
+    color: #fff;
+    text-transform: none;
+    text-align: center; }
+  .hero h3 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .hero ul {
+    display: block;
+    text-align: center; }
+  .hero li {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    list-style-type: none; }
+
+header {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999; }
+
+.desktop-nav {
+  text-align: center;
+  display: none; }
+  .desktop-nav .desk-nav-logo {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    display: none; }
+  .desktop-nav ul {
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 0; }
+  .desktop-nav li {
+    display: inline-block;
+    padding: 19px 15px;
+    -webkit-transition: .3s;
+    /* Safari */
+    transition: .3s; }
+    .desktop-nav li a {
+      color: #fff; }
+    .desktop-nav li:hover > a {
+      color: #E50E40;
+      text-shadow: none; }
+
+.logo {
+  background: url("../images/logo.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 66px;
+  width: 66px; }
+
+.burger {
+  font-size: 35px;
+  color: #E50E40;
+  position: fixed;
+  top: 10px;
+  right: 25px;
+  -webkit-transition: .3s;
+  /* Safari */
+  transition: .3s; }
+
+/* ========== JS ========== */
+.hdr-scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: .5s;
+  /* Safari */
+  transition: .5s;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.38); }
+  .hdr-scrolled .desk-nav-logo {
+    display: block; }
+
+.nav-scrolled li {
+  -webkit-transition: .5s;
+  /* Safari */
+  transition: .5s; }
+  .nav-scrolled li a {
+    color: #333;
+    -webkit-transition: .5s;
+    /* Safari */
+    transition: .5s; }
+  .nav-scrolled li:hover {
+    background-color: #E50E40; }
+    .nav-scrolled li:hover > a {
+      color: #fff; }
+
+/* ========== Media ==========*/
+@media all and (min-width: 769px) {
+  .desktop-nav {
+    display: block; }
+
+  .burger {
+    display: none; } }
+.homepage-header-height {
+  height: auto; }
+
+.coaches-main h1, .coaches-main h2, .coaches-main h3, .coaches-main h4, .coaches-main h5, .coaches-main a, .coaches-main p {
+  color: #000; }
+.coaches-main p {
+  text-transform: none; }
+.coaches-main h4 {
+  color: #E50E40; }
+
+.bio-name {
+  text-align: left;
+  padding-left: 20px; }
+
+.coach-img {
+  height: 100%;
+  width: 100%;
+  border: 5px solid #222;
+  margin-bottom: 30px; }
+
+.cert-list {
+  padding-left: 20px; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 280px;
+  background-color: #000;
+  padding-top: 30px;
+  padding-bottom: 20px; }
+
+.footer-logo {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  display: block;
+  height: 70px;
+  width: 70px;
+  z-index: 2;
+  margin-bottom: 30px; }
+
+.footer-logo-wrap li, .footer-social-wrap li {
+  display: inline-block;
+  color: #fff;
+  list-style-type: none; }
+
+.footer-address-wrap ul {
+  text-align: center; }
+.footer-address-wrap li {
+  list-style-type: none;
+  color: #fff;
+  padding-left: 10px; }
+  .footer-address-wrap li a {
+    color: #fff; }
+    .footer-address-wrap li a:hover {
+      color: #E50E40; }
+
+.footer-social-wrap ul {
+  text-align: center;
+  background-color: white; }
+.footer-social-wrap li {
+  padding: 0 5px; }
+
+@media all and (min-width: 768px) {
+  footer {
+    height: 140px; } }
+/*doc
+---
+title: Push
+name: Push
+category: Utilities
+---
+
+Default Example: The push class will apply across all breakpoints.
+
+```html_example
+<div class="push--10">Large 10</div>
+<div class="push--20">Large 20</div>
+<div class="push--30">Large 30</div>
+<div class="push--40">Large 40</div>
+```
+
+Multi Breakpoint Example: The Push classes will apply to their respective breakpoints
+Large: > 1024
+Medium: 640 -> 1024
+Small: < 640
+
+```html_example
+<div class="push--small-80 push--medium-30 push--large-10">Large 1</div>
+<div class="push--small-90 push--medium-40 push--large-20">Large 2</div>
+<div class="push--small-100 push--medium-50 push--large-30">Large 3</div>
+<div class="push--small-110 push--medium-60 push--large-40">Large 4</div>
+```
+
+Last Updated: 5/28/15 module: _push.scss
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ow: text-shadow\": expected selector or at-rule, was \": 2px 2px 2px r...\"\A         on line 5 of css/_base.scss\A         from line 1 of css/main.scss\A \A 1: // variables \A 2: $primary-highlight-color: #E50E40;\A 3: $primary-text-color-dark: #333;\A 4: $primary-text-color-light: #fff;\A 5: $text-shadow: text-shadow: 2px 2px 2px rgba(000, 000, 000, .5);\A 6: \A 7: \A 8: \A 9: // Fonts\A 10: h1, h2, h3, a {"; }
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--00,
+.push--large-00 {
+  margin-top: 00px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--10,
+.push--large-10 {
+  margin-top: 10px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--20,
+.push--large-20 {
+  margin-top: 20px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--30,
+.push--large-30 {
+  margin-top: 30px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--40,
+.push--large-40 {
+  margin-top: 40px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--50,
+.push--large-50 {
+  margin-top: 50px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--60,
+.push--large-60 {
+  margin-top: 60px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--70,
+.push--large-70 {
+  margin-top: 70px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--80,
+.push--large-80 {
+  margin-top: 80px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--90,
+.push--large-90 {
+  margin-top: 90px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--100,
+.push--large-100 {
+  margin-top: 100px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--110,
+.push--large-110 {
+  margin-top: 110px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--120,
+.push--large-120 {
+  margin-top: 120px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--130,
+.push--large-130 {
+  margin-top: 130px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--140,
+.push--large-140 {
+  margin-top: 140px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--150,
+.push--large-150 {
+  margin-top: 150px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--160,
+.push--large-160 {
+  margin-top: 160px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--170,
+.push--large-170 {
+  margin-top: 170px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--180,
+.push--large-180 {
+  margin-top: 180px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--190,
+.push--large-190 {
+  margin-top: 190px; }
+
+/*
+* Commenting for now, keeps large  or default from applying if these classes are also applied
+*/
+.push--200,
+.push--large-200 {
+  margin-top: 200px; }
+
+/*# sourceMappingURL=main.css.map */
