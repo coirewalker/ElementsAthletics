@@ -47,7 +47,7 @@ a {
 	color: $primary-text-color-dark;
 	text-decoration: none;
 	text-transform: uppercase;
-	-webkit-transition: .3s; /* Safari */
+	-webkit-transition: .3s; //Safari
 	transition: .3s;
 	&:hover {
 		color: $primary-highlight-color;

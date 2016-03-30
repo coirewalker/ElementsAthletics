@@ -34,7 +34,6 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: .3s;
-  /* Safari */
   transition: .3s; }
   a:hover {
     color: #E50E40;
@@ -303,7 +302,7 @@ header {
 
 .burger {
   font-size: 35px;
-  color: #E50E40;
+  color: #000;
   position: fixed;
   top: 10px;
   right: 25px;
@@ -436,28 +435,51 @@ header {
     top: 50%;
     left: 48%; } }
 .contact-main {
-  border-bottom: 1px solid #000;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-shadow: 0px 15px 21px -10px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 15px 21px -10px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 15px 21px -10px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 15px 21px -10px rgba(0, 0, 0, 0.61); }
 
 .contact-hero {
+  min-height: 32vh;
   margin: 0 auto;
-  margin-top: 100px;
-  padding-bottom: 30px;
-  max-width: 90%; }
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  text-align: center; }
   .contact-hero h2 {
+    padding-top: 10vh;
     font-size: 50px;
-    color: #000;
-    text-align: center; }
+    color: #000; }
   .contact-hero h3 {
+    padding-top: 20px;
     font-size: 15px;
-    color: #000;
-    text-align: center; }
+    color: #000; }
+  .contact-hero p {
+    text-transform: none; }
+
+.blog-wrap {
+  margin-top: 20px; }
+  .blog-wrap a:hover {
+    text-decoration: underline; }
 
 #map {
   height: 260px;
   width: 100%;
-  z-index: 1; }
+  z-index: -1; }
 
+@media all and (min-width: 400px) {
+  #map {
+    height: 350px; } }
+@media all and (min-width: 769px) {
+  .contact-hero {
+    margin-top: 130px; } }
+@media all and (min-width: 1081px) {
+  #map {
+    height: 50vh; } }
 footer {
   width: 100%;
   height: 300px;

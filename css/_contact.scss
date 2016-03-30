@@ -1,32 +1,67 @@
 .contact-main {
-	border-bottom: 1px solid #000;
 	width: 100%;
+	-webkit-box-shadow: 0px 15px 21px -10px rgba(0,0,0,0.61);
+	-moz-box-shadow: 0px 15px 21px -10px rgba(0,0,0,0.61);
+	box-shadow: 0px 15px 21px -10px rgba(0,0,0,0.61);
+	box-shadow: 0px 15px 21px -10px rgba(0, 0, 0, 0.61);
 }
 
 .contact-hero {
+	min-height: 32vh;
 	margin: 0 auto;
-	margin-top: 100px;
-	padding-bottom: 30px;
-	max-width: 90%;
+	position: relative;
+	top: 50%;
+  	left: 50%;
+  	transform: translateX(-50%);
+	padding: 30px;
+	text-align: center;
 	h2 {
+		padding-top: 10vh;
 		font-size: 50px;
 		color: #000;
-		text-align: center;
 	}
 	h3 {
+		padding-top: 20px;
 		font-size: 15px;
 		color: #000;
-		text-align: center;
+	}
+	p {
+		text-transform: none;
 	}
 }
 
+.blog-wrap {
+	margin-top: 20px;
+	a:hover  {
+		text-decoration: underline;
+	}
+}
 	
 // MAP 
 #map {
 	height: 260px;
 	width: 100%;
-	z-index: 1;
+	z-index: -1;
 }
 
 
 
+
+// MEDIA QUERIES
+@media all and (min-width: 400px) {
+	#map {
+		height: 350px;
+	}
+}
+
+@media all and (min-width: 769px) {
+	.contact-hero {
+		margin-top: 130px;
+	}
+}
+
+@media all and (min-width: 1081px) {
+	#map {
+		height: 50vh;
+	}
+}
