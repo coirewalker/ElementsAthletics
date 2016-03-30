@@ -45,8 +45,9 @@ footer {
     		line-height: 30px;
     		font-size: 13px;
 			&:hover {
-				color: #fff;
-				opacity: .7;
+				color: $primary-highlight-color;
+				// color: #fff;
+				opacity: 1;
 			}
 		}
 	}
@@ -59,7 +60,7 @@ footer {
 	li {
 		padding: 0 5px;
 		&:hover {
-			opacity: .7;
+			opacity: 1;
 		}
 	}
 	a {
@@ -67,8 +68,9 @@ footer {
 		-webkit-transition: .3s; /* Safari */
 		transition: .3s;
 		&:hover {
-			color: #fff;
-			opacity: .7;
+			color: $primary-highlight-color;
+			// color: #fff;
+			opacity: 1;
 		}
 	}
 }

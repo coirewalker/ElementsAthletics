@@ -6,10 +6,12 @@ $(document).ready(function(){
 		if ($(window).outerWidth() > 768) {
 			var scroll_top = $(this).scrollTop();
 			if (scroll_top >= 1) {
+				$('.desktop-nav').removeClass('hidden');
 				$('header').addClass('hdr-scrolled');
 				$('.desktop-nav').addClass('nav-scrolled');
 			} else {
 				$('header').removeClass('hdr-scrolled');
+				$('.desktop-nav').addClass('hidden');
 				$('.desktop-nav').removeClass('nav-scrolled');
 			}
 		}
