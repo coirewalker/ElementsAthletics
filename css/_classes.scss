@@ -66,3 +66,10 @@
 	transform: translateX(-50%);
 }
 
+@media all and (min-width:768px) {
+	.class-schedule {
+	    width: 97%;
+	    top: 50%;
+	    left: 48%;
+	}
+}

@@ -67,6 +67,10 @@ a {
   	transform-style: preserve-3d;
 }
 
+
+
+
+
 // UTILITY CLASSES 
 .hidden {
 	display: none;
@@ -90,6 +94,13 @@ a {
 	width: 100%;
 }
 
+@media all and (max-width: 769) {
+	.bottom-spacer {
+		height: 50px;
+		content: '';
+	}	
+}
+
 
 
 
@@ -104,7 +115,6 @@ a {
 
 .modal-dialog {
 	width: 100%;
-	margin-top: 60px;
 }
 
 .modal-header {
@@ -113,6 +123,10 @@ a {
 	h4 {
 		text-align: center;
 	}
+}
+
+.modal-content {
+	background-color: transparent;
 }
 
 .modal-footer {
