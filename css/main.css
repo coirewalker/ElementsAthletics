@@ -1,5 +1,8 @@
-.text-shadow, .hero h4, .hero li, .classes-hero h2, .about-hero h2, .membership-hero h2 {
+.text-shadow, .hero h4, .hero li, .coaches-hero h2, .classes-hero h2, .contact-hero h2, .about-hero h2, .membership-hero h2 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+
+#sb-site {
+  background: url("../images/hero-noise.png"); }
 
 h1, h2, h3, a {
   font-family: 'Montserrat', helvetica, arial, sans-serif;
@@ -360,6 +363,7 @@ header {
 
 .coaches-main {
   margin: 0 auto;
+  padding-bottom: 50px;
   max-width: 1080px; }
   .coaches-main h1, .coaches-main h2, .coaches-main h3, .coaches-main h4, .coaches-main h5, .coaches-main a, .coaches-main p {
     color: #000; }
@@ -367,6 +371,38 @@ header {
     text-transform: none; }
   .coaches-main h4 {
     color: #E50E40; }
+
+.coaches-bg {
+  background: url("../images/coaches-bg.jpg");
+  background-size: cover;
+  position: relative;
+  background-repeat: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-position: center top;
+  opacity: 1;
+  -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.51);
+  z-index: 1; }
+
+.coaches-hero {
+  z-index: 1;
+  margin: 0 auto;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  width: 100%; }
+  .coaches-hero h2 {
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 400; }
 
 .coach-item {
   padding-bottom: 10px; }
@@ -386,6 +422,9 @@ header {
 .cert-list {
   padding-left: 20px; }
 
+@media (min-width: 500px) {
+  .classes-hero h2 {
+    font-size: 55px; } }
 .classes-bg {
   background: url("../images/classes-bg.jpg");
   background-size: cover;
@@ -441,8 +480,7 @@ header {
 
 .classes-main {
   max-width: 1080px;
-  margin: 0 auto;
-  padding-bottom: 50px; }
+  margin: 0 auto; }
   .classes-main h1, .classes-main h2, .classes-main h3, .classes-main h4, .classes-main h5, .classes-main a, .classes-main p {
     color: #000; }
   .classes-main p {
@@ -479,36 +517,67 @@ header {
 @media (min-width: 500px) {
   .classes-hero h2 {
     font-size: 55px; } }
-.contact-main {
+.contact-bg {
+  background: url("../images/beastie-bg.jpg");
+  background-size: cover;
+  position: relative;
+  background-repeat: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
   width: 100%;
-  -webkit-box-shadow: 0px 15px 21px -10px rgba(0, 0, 0, 0.61);
-  -moz-box-shadow: 0px 15px 21px -10px rgba(0, 0, 0, 0.61);
-  box-shadow: 0px 15px 21px -10px rgba(0, 0, 0, 0.61); }
+  background-position: center top;
+  opacity: 1;
+  -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.51);
+  z-index: 1; }
 
 .contact-hero {
-  background: url("../images/hero-noise.png");
-  min-height: 32vh;
+  z-index: 1;
   margin: 0 auto;
-  position: relative;
-  top: 50%;
+  position: absolute;
+  top: 50vh;
   left: 50%;
+  transform: translateY(-50%);
   transform: translateX(-50%);
-  padding: 90px 30px 30px 30px;
-  text-align: center; }
+  width: 100%; }
   .contact-hero h2 {
-    padding: 0;
-    font-size: 50px;
-    color: #000; }
-  .contact-hero h3, .contact-hero a {
-    font-size: 15px;
-    color: #000; }
-  .contact-hero a:hover {
-    color: #E50E40; }
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400; }
 
-.blog-wrap {
-  margin-top: 20px; }
-  .blog-wrap a:hover {
-    text-decoration: underline; }
+.contact-lower-hero {
+  padding: 60px 20px;
+  margin: 0 auto;
+  z-index: 0;
+  border-bottom: solid 3px #000; }
+  .contact-lower-hero h2 {
+    color: #000;
+    text-align: center;
+    text-transform: uppercase; }
+  .contact-lower-hero p {
+    color: #333;
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    text-align: center;
+    font-size: 18px; }
+    .contact-lower-hero p:hover {
+      color: #333; }
+  .contact-lower-hero a {
+    color: #000; }
+  .contact-lower-hero h2:hover, .contact-lower-hero h3:hover {
+    text-decoration: none;
+    color: #000; }
+  .contact-lower-hero a:hover {
+    color: #E50E40;
+    text-decoration: none; }
+  .contact-lower-hero span {
+    color: #E50E40; }
 
 #map {
   height: 260px;
@@ -519,21 +588,11 @@ header {
   #map {
     height: 350px; } }
 @media (min-width: 500px) {
-  .contact-hero h3, .contact-hero p {
-    font-size: 18px; } }
-@media (min-width: 769px) {
-  .contact-hero {
-    margin-top: 40px;
-    padding-bottom: 40px; }
-    .contact-hero h2 {
-      font-size: 70px;
-      padding-bottom: 30px; } }
+  .contact-hero h2 {
+    font-size: 55px; } }
 @media (min-width: 1081px) {
   #map {
-    height: 400px; }
-
-  .contact-hero {
-    margin-top: 0; } }
+    height: 400px; } }
 footer {
   width: 100%;
   height: 300px;
@@ -812,7 +871,6 @@ Last Updated: 5/28/15 module: _push.scss
     font-weight: 400; }
 
 .about-lower-hero {
-  background: url("../images/hero-noise.png");
   padding: 60px 20px;
   margin: 0 auto;
   z-index: 0; }
@@ -895,8 +953,5 @@ Last Updated: 5/28/15 module: _push.scss
 
   .membership-lower-hero h3 {
     font-size: 22px; } }
-@media (min-width: 769px) {
-  .membership-lower-hero {
-    padding: 120px 80px; } }
 
 /*# sourceMappingURL=main.css.map */

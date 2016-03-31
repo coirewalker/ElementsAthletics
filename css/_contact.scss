@@ -1,40 +1,78 @@
-.contact-main {
-	width: 100%;
-	-webkit-box-shadow: 0px 15px 21px -10px rgba(0,0,0,0.61);
-	-moz-box-shadow: 0px 15px 21px -10px rgba(0,0,0,0.61);
-	box-shadow: 0px 15px 21px -10px rgba(0,0,0,0.61);
+//HERO
+.contact-bg {
+    background: url('../images/beastie-bg.jpg');
+    background-size: cover;
+    position: relative;
+    background-repeat: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-position: center top;
+    opacity: 1;
+  	-webkit-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.51);
+  	-moz-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.51);
+  	box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.51);
+    z-index: 1;
 }
 
 .contact-hero {
-  	background: url('../images/hero-noise.png');
-	min-height: 32vh;
-	margin: 0 auto;
-	position: relative;
-	top: 50%;
-  	left: 50%;
-  	transform: translateX(-50%);
-	padding: 90px 30px 30px 30px;
-	text-align: center;
-	h2 {
-		padding: 0;
-		font-size: 50px;
-		color: #000;
-	}
-	h3, a {
-		font-size: 15px;
-		color: #000;
-	}
-	a:hover {
-		color: $primary-highlight-color;
-	}
+  	z-index: 1;
+  	margin: 0 auto;
+  	position: absolute;
+  	top: 50vh;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    h2 {
+        font-family: 'Montserrat', helvetica, arial, sans-serif;
+      	color: #fff;
+      	text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+      	@extend .text-shadow;
+    }
 }
 
-.blog-wrap {
-	margin-top: 20px;
-	a:hover  {
-		text-decoration: underline;
-	}
-}
+.contact-lower-hero {
+	// background: url('../images/hero-noise.png');
+	padding: 60px 20px;
+  	margin: 0 auto;
+  	z-index: 0;
+  	border-bottom: solid 3px #000;
+  	h2 {
+  		color: #000;
+  		text-align: center;
+  		text-transform: uppercase;
+  	}
+  	p {
+    	color: #333;
+        font-family: 'Montserrat', helvetica, arial, sans-serif;
+      	font-weight: 400;
+        letter-spacing: 0;
+        text-transform: none;
+        text-align: center;
+        font-size: 18px;
+        &:hover {
+          color: #333;
+        }
+    }
+  	a {
+  		color: #000;
+  	}
+  	h2:hover, h3:hover {
+  		text-decoration: none;
+  		color: #000;
+  	}
+  	a:hover {
+  		color: $primary-highlight-color;
+  		text-decoration: none;
+  	}
+  	span {
+  		color: $primary-highlight-color;
+  	}
+}  	
 	
 // MAP 
 #map {
@@ -56,33 +94,16 @@
 @media (min-width: 500px) {
 	.contact-hero {
 		h2 {
-			// padding-top: 40px;
-		}
-		h3, p {
-			font-size: 18px;
+		  font-size: 55px;
 		}
 	}
+
 }
 
-@media (min-width: 769px) {
-	.contact-hero {
-		margin-top: 40px;
-		padding-bottom: 40px;
-		h2 {
-			font-size: 70px;
-			// padding-top: 0;
-			padding-bottom: 30px;
-		}
-	}
-}
 
 @media (min-width: 1081px) {
 	#map {
 		height: 400px;
 	}
-	.contact-hero {
-		margin-top: 0;
-	}
-
 }
 

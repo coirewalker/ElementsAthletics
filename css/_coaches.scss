@@ -1,5 +1,6 @@
 .coaches-main {
 	margin: 0 auto;
+  padding-bottom: 50px;
 	max-width: 1080px;
 	h1, h2, h3, h4, h5, a, p {
 		color: #000;
@@ -11,6 +12,44 @@
 		color: $primary-highlight-color;
 	}
 }
+
+//HERO
+.coaches-bg {
+    background: url('../images/coaches-bg.jpg');
+    background-size: cover;
+    position: relative;
+    background-repeat: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-position: center top;
+    opacity: 1;
+  	-webkit-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.51);
+  	-moz-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.51);
+  	box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.51);
+    z-index: 1;
+}
+
+.coaches-hero {
+  z-index: 1;
+  	margin: 0 auto;
+  	position: absolute;
+  	top: 50vh;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    h2 {
+        font-family: 'Montserrat', helvetica, arial, sans-serif;
+      	color: #fff;
+      	text-align: center;
+        font-size: 55px;
+        font-weight: 400;
+      	@extend .text-shadow;
+    }
+}
+
 .coach-item {
 	padding-bottom: 10px;
 	h3 {
@@ -32,4 +71,15 @@
 
 .cert-list {
 	padding-left: 20px;
+}
+
+
+
+// MEDIA QUERIES
+@media (min-width: 500px) {
+  .classes-hero {
+    h2 {
+      font-size: 55px;
+    }
+  }
 }

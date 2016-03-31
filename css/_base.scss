@@ -5,7 +5,9 @@ $primary-text-color-light: #fff;
 
 .text-shadow { text-shadow: 2px 2px 2px rgba(000, 000, 000, .5); }
 
-
+#sb-site {
+  background: url('../images/hero-noise.png');
+}
 
 // Fonts
 h1, h2, h3, a {
