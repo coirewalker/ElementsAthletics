@@ -126,7 +126,12 @@ a {
 }
 
 .modal-content {
-	background-color: transparent;
+	background-color: rgb(231, 109, 109);
+	padding: 20px;
+}
+
+.modal-header {
+	padding: 0 !important;
 }
 
 .modal-footer {

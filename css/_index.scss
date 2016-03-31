@@ -1,5 +1,5 @@
 .homepage-bg {
-    background: url('../images/bg.jpg');
+    background: url('../images/index-bg.jpg');
     background-size: cover;
     position: relative;
     background-repeat: none;
@@ -9,7 +9,6 @@
     width: 100%;
     z-index: -1;
     background-position: center top;
-    opacity: .9;
 }
 
 .elements-logo-main {
@@ -17,12 +16,12 @@
     background-size: contain;
     background-repeat: none;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
-    height: 175px;
-    width: 175px;
+    height: 135px;
+    width: 135px;
 }
 
 .hero {
@@ -44,7 +43,6 @@
   		@extend .text-shadow;
   	}
   	h3 {
-        // font-family: 'Alegreya', serif;
   		font-family: 'Lora', serif;
         letter-spacing: 0;
   		font-weight: 700;
@@ -70,9 +68,10 @@
 
 
 // MEDIA QUERIES 
-@media all and (min-width: 769px) {
+@media (min-width: 500px) {
     .elements-logo-main {
-        height: 210px;
-        width: 210px;
+      top: 50%;
+      height: 220px;
+      width: 220px;
     }
 }

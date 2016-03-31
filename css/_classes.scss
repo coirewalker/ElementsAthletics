@@ -1,3 +1,43 @@
+//HERO
+.classes-bg {
+    background: url('../images/classes-bg.jpg');
+    background-size: cover;
+    position: relative;
+    background-repeat: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-position: center top;
+    opacity: 1;
+  	-webkit-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.51);
+  	-moz-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.51);
+  	box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.51);
+    z-index: 1;
+}
+
+.classes-hero {
+  z-index: 1;
+  	margin: 0 auto;
+  	position: absolute;
+  	top: 50vh;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    h2 {
+        font-family: 'Montserrat', helvetica, arial, sans-serif;
+      	color: #fff;
+      	text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+      	@extend .text-shadow;
+    }
+}
+
+
+
+
 // SCHEDULE 
 .schedule-main {
 	max-width: 1080px;
@@ -6,6 +46,13 @@
 	h2 {
 		color: #000;
 	}	
+	h3 {
+		text-transform: uppercase;
+		cursor: pointer;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .class-schedule {
@@ -17,6 +64,8 @@
 	transform: translateY(-50%);
 	transform: translateX(-50%);
 }
+
+
 
 
 // CLASSES 
@@ -39,11 +88,11 @@
 	padding-bottom: 10px;
 }
 
-.classes-hero-wrap {
+.classes-icon-wrap {
 	position: relative;
 }
 
-.classes-hero {
+.classes-icon {
 	position: relative;
 	top: 50%;
 	left: 50%;
@@ -66,10 +115,23 @@
 	transform: translateX(-50%);
 }
 
+
+
+
+
+// MEDIA QUERIES
+@media (min-width: 500px) {
+  .classes-hero {
+    h2 {
+      font-size: 55px;
+    }
+  }
+}
+
 @media all and (min-width:768px) {
-	.class-schedule {
-	    width: 97%;
-	    top: 50%;
-	    left: 48%;
-	}
+	// .class-schedule {
+	//     width: 97%;
+	//     top: 50%;
+	//     left: 48%;
+	// }
 }
