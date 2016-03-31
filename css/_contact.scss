@@ -6,16 +6,17 @@
 }
 
 .contact-hero {
+  	background: url('../images/hero-noise.png');
 	min-height: 32vh;
 	margin: 0 auto;
 	position: relative;
 	top: 50%;
   	left: 50%;
   	transform: translateX(-50%);
-	padding: 30px;
+	padding: 90px 30px 30px 30px;
 	text-align: center;
 	h2 {
-		padding-top: 80px;
+		padding: 0;
 		font-size: 50px;
 		color: #000;
 	}
@@ -54,6 +55,9 @@
 
 @media (min-width: 500px) {
 	.contact-hero {
+		h2 {
+			// padding-top: 40px;
+		}
 		h3, p {
 			font-size: 18px;
 		}
@@ -63,8 +67,10 @@
 @media (min-width: 769px) {
 	.contact-hero {
 		margin-top: 40px;
+		padding-bottom: 40px;
 		h2 {
 			font-size: 70px;
+			// padding-top: 0;
 			padding-bottom: 30px;
 		}
 	}
