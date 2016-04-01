@@ -293,7 +293,7 @@ header {
     padding: 0; }
   .desktop-nav li {
     display: inline-block;
-    padding: 18px 15px 19px 15px;
+    vertical-align: top;
     -webkit-transition: .3s;
     /* Safari */
     transition: .3s; }
@@ -341,7 +341,9 @@ header {
     color: #333;
     -webkit-transition: .5s;
     /* Safari */
-    transition: .5s; }
+    transition: .5s;
+    display: inline-block;
+    padding: 18px 15px 19px 15px; }
   .nav-scrolled li:hover {
     background-color: #E50E40; }
     .nav-scrolled li:hover > a {
