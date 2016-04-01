@@ -1,4 +1,4 @@
-.text-shadow, .homepage-hero h4, .homepage-hero li, .coaches-hero h2, .classes-hero h2, .contact-hero h2, .about-hero h2, .membership-hero h2 {
+.text-shadow, .hero-title h2, .homepage-hero h4, .homepage-hero li, .coaches-hero h2, .contact-hero h2, .about-hero h2, .membership-hero h2 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
 
 #sb-site {
@@ -70,6 +70,25 @@ a {
   .bottom-spacer {
     height: 50px;
     content: ''; } }
+.hero-title {
+  margin: 0 auto;
+  position: absolute;
+  top: 55vh;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1; }
+  .hero-title h2 {
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400; }
+
+@media (min-width: 500px) {
+  .hero-title h2 {
+    font-size: 55px; } }
 .modal {
   background-color: none; }
 
@@ -206,7 +225,7 @@ ul.navbar-nav {
   .sb-slidebar h3 {
     font-size: 1.7em; } }
 .homepage-bg {
-  background: url("../images/homepage-bg.jpg");
+  background: url("../images/about-bg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -219,7 +238,7 @@ ul.navbar-nav {
 
 .elements-logo-main {
   position: absolute;
-  top: 15%;
+  top: 22%;
   left: 50%;
   transform: translateY(-50%);
   transform: translateX(-50%);
@@ -259,6 +278,12 @@ ul.navbar-nav {
     text-align: center;
     list-style-type: none; }
 
+@media (min-width: 375px) {
+  .elements-logo-main {
+    top: 25%; } }
+@media (min-width: 480px) {
+  .elements-logo-main {
+    top: 18%; } }
 @media (min-width: 768px) {
   .elements-logo-main {
     height: 220px;
@@ -446,22 +471,6 @@ header {
   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.51);
   z-index: 1; }
 
-.classes-hero {
-  z-index: 1;
-  margin: 0 auto;
-  position: absolute;
-  top: 50vh;
-  left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
-  width: 100%; }
-  .classes-hero h2 {
-    font-family: 'Montserrat', helvetica, arial, sans-serif;
-    color: #fff;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 400; }
-
 .schedule-main {
   max-width: 1080px;
   margin: 0 auto;
@@ -519,11 +528,8 @@ header {
   transform: translateY(-50%);
   transform: translateX(-50%); }
 
-@media (min-width: 500px) {
-  .classes-hero h2 {
-    font-size: 55px; } }
 .contact-bg {
-  background: url("../images/index-bg.jpg");
+  background: url("../images/contact-bg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;

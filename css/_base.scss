@@ -104,6 +104,34 @@ a {
 }
 
 
+// CENTER HERO TITLE
+.hero-title {
+    margin: 0 auto;
+    position: absolute;
+    top: 55vh;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1;
+    h2 {
+        font-family: 'Montserrat', helvetica, arial, sans-serif;
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+        @extend .text-shadow;
+    }
+}
+
+@media (min-width: 500px) {
+  .hero-title {
+    h2 {
+      font-size: 55px;
+    }
+  }
+}
+
 
 
 // MODAL OVERRIDES 
