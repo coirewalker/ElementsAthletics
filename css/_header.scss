@@ -3,7 +3,6 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	// background-color: rgba(000,000,000,.15);
 	z-index: 2;
 }
 
@@ -32,10 +31,12 @@ header {
     	transition: .3s;
     	a {
     		color: $primary-text-color-light;
+    		display: inline-block;
+            padding: 18px 15px 19px 15px;
     	}
 		&:hover {
 			> a {
-				color: $primary-text-color-dark;
+				color: $primary-highlight-color;
 			}
 		}
 	}
@@ -91,8 +92,6 @@ header {
 			color: $primary-text-color-dark;
 			-webkit-transition: .5s; /* Safari */
 	    	transition: .5s;
-            display: inline-block;
-            padding: 18px 15px 19px 15px;
 		}
 		&:hover {
 			background-color: $primary-highlight-color;

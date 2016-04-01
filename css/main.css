@@ -298,9 +298,11 @@ header {
     /* Safari */
     transition: .3s; }
     .desktop-nav li a {
-      color: #fff; }
+      color: #fff;
+      display: inline-block;
+      padding: 18px 15px 19px 15px; }
     .desktop-nav li:hover > a {
-      color: #333; }
+      color: #E50E40; }
 
 .logo {
   background: url("../images/logo.jpg") no-repeat;
@@ -341,9 +343,7 @@ header {
     color: #333;
     -webkit-transition: .5s;
     /* Safari */
-    transition: .5s;
-    display: inline-block;
-    padding: 18px 15px 19px 15px; }
+    transition: .5s; }
   .nav-scrolled li:hover {
     background-color: #E50E40; }
     .nav-scrolled li:hover > a {
