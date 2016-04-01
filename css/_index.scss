@@ -1,5 +1,5 @@
 .homepage-bg {
-    background: url('../images/index-bg-5.jpg');
+    background: url('../images/homepage-bg.jpg');
     background-size: cover;
     position: relative;
     background-repeat: none;
@@ -12,22 +12,18 @@
 }
 
 .elements-logo-main {
-    background: url('../images/logo-white-alt.png');
-    background-size: contain;
-    background-repeat: none;
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
-    height: 135px;
-    width: 135px;
+	width: 150px;
+	height: 150px;
 }
 
-.hero {
-	margin: 0 auto;
+.homepage-hero {
 	position: absolute;
-	top: 75%;
+	bottom: 24px;
   	left: 50%;
   	transform: translateY(-50%);
   	transform: translateX(-50%);
@@ -40,6 +36,7 @@
   		text-align: center;
         font-size: 16px;
         font-weight: 400;
+        margin: 0;
   		@extend .text-shadow;
   	}
   	h3 {
@@ -67,11 +64,26 @@
 
 
 
-// MEDIA QUERIES 
-@media (min-width: 500px) {
-    .elements-logo-main {
-      top: 50%;
-      height: 220px;
-      width: 220px;
-    }
+// // MEDIA QUERIES
+@media (min-width: 768px) {
+	.elements-logo-main {
+		height: 220px;
+		width: 220px;
+		top: 25%;
+	}
+	.homepage-hero {
+		bottom: 35px;
+		h4 {
+			font-size: 25px;
+		}
+		h3 {
+			font-size: 26px;
+			line-height: 1;
+		}
+	}
 }
+
+
+
+
+

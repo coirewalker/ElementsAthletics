@@ -1,4 +1,4 @@
-.text-shadow, .hero h4, .hero li, .coaches-hero h2, .classes-hero h2, .contact-hero h2, .about-hero h2, .membership-hero h2 {
+.text-shadow, .homepage-hero h4, .homepage-hero li, .coaches-hero h2, .classes-hero h2, .contact-hero h2, .about-hero h2, .membership-hero h2 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
 
 #sb-site {
@@ -206,7 +206,7 @@ ul.navbar-nav {
   .sb-slidebar h3 {
     font-size: 1.7em; } }
 .homepage-bg {
-  background: url("../images/index-bg-5.jpg");
+  background: url("../images/homepage-bg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -218,55 +218,60 @@ ul.navbar-nav {
   background-position: center top; }
 
 .elements-logo-main {
-  background: url("../images/logo-white-alt.png");
-  background-size: contain;
-  background-repeat: none;
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 50%;
   transform: translateY(-50%);
   transform: translateX(-50%);
-  height: 135px;
-  width: 135px; }
+  width: 150px;
+  height: 150px; }
 
-.hero {
-  margin: 0 auto;
+.homepage-hero {
   position: absolute;
-  top: 75%;
+  bottom: 24px;
   left: 50%;
   transform: translateY(-50%);
   transform: translateX(-50%);
   width: 100%;
   max-width: 500px; }
-  .hero h4 {
+  .homepage-hero h4 {
     font-family: 'Montserrat', helvetica, arial, sans-serif;
     color: #fff;
     text-transform: none;
     text-align: center;
     font-size: 16px;
-    font-weight: 400; }
-  .hero h3 {
+    font-weight: 400;
+    margin: 0; }
+  .homepage-hero h3 {
     font-family: 'Lora', serif;
     letter-spacing: 0;
     font-weight: 700;
     line-height: 0;
     font-size: 19px; }
-  .hero ul {
+  .homepage-hero ul {
     display: block;
     text-align: center;
     margin: 0;
     padding: 0; }
-  .hero li {
+  .homepage-hero li {
     color: #fff;
     display: inline-block;
     text-align: center;
     list-style-type: none; }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .elements-logo-main {
-    top: 50%;
     height: 220px;
-    width: 220px; } }
+    width: 220px;
+    top: 25%; }
+
+  .homepage-hero {
+    bottom: 35px; }
+    .homepage-hero h4 {
+      font-size: 25px; }
+    .homepage-hero h3 {
+      font-size: 26px;
+      line-height: 1; } }
 header {
   height: 60px;
   position: fixed;
@@ -426,7 +431,7 @@ header {
   .classes-hero h2 {
     font-size: 55px; } }
 .classes-bg {
-  background: url("../images/index-bg-3.jpg");
+  background: url("../images/index-bg-4.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -518,7 +523,7 @@ header {
   .classes-hero h2 {
     font-size: 55px; } }
 .contact-bg {
-  background: url("../images/index-bg-2.jpg");
+  background: url("../images/index-bg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
