@@ -206,7 +206,7 @@ ul.navbar-nav {
   .sb-slidebar h3 {
     font-size: 1.7em; } }
 .homepage-bg {
-  background: url("../images/index-bg.jpg");
+  background: url("../images/index-bg-5.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -321,7 +321,6 @@ header {
   /* Safari */
   transition: .3s; }
 
-/* ========== JS ========== */
 .hdr-scrolled {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: .5s;
@@ -353,7 +352,6 @@ header {
     .nav-scrolled li:active > a {
       color: #fff; }
 
-/* ========== Media ==========*/
 @media all and (min-width: 769px) {
   .desktop-nav {
     display: block; }
@@ -375,7 +373,7 @@ header {
     color: #E50E40; }
 
 .coaches-bg {
-  background: url("../images/coaches-bg.jpg");
+  background: url("../images/classes-bg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -428,7 +426,7 @@ header {
   .classes-hero h2 {
     font-size: 55px; } }
 .classes-bg {
-  background: url("../images/classes-bg.jpg");
+  background: url("../images/index-bg-3.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -520,7 +518,7 @@ header {
   .classes-hero h2 {
     font-size: 55px; } }
 .contact-bg {
-  background: url("../images/beastie-bg.jpg");
+  background: url("../images/index-bg-2.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -552,10 +550,13 @@ header {
     font-weight: 400; }
 
 .contact-lower-hero {
-  padding: 60px 20px;
+  padding: 60px 20px 40px 20px;
   margin: 0 auto;
   z-index: 0;
   border-bottom: solid 3px #000; }
+  .contact-lower-hero a:hover {
+    color: #E50E40;
+    text-decoration: underline; }
   .contact-lower-hero h2 {
     color: #000;
     text-align: center;
@@ -567,17 +568,13 @@ header {
     letter-spacing: 0;
     text-transform: none;
     text-align: center;
-    font-size: 18px; }
+    font-size: 18px;
+    padding-bottom: 20px; }
     .contact-lower-hero p:hover {
       color: #333; }
-  .contact-lower-hero a {
-    color: #000; }
   .contact-lower-hero h2:hover, .contact-lower-hero h3:hover {
     text-decoration: none;
     color: #000; }
-  .contact-lower-hero a:hover {
-    color: #E50E40;
-    text-decoration: none; }
   .contact-lower-hero span {
     color: #E50E40; }
 
@@ -841,7 +838,7 @@ Last Updated: 5/28/15 module: _push.scss
   margin-top: 200px; }
 
 .about-bg {
-  background: url("../images/about-bg.jpg");
+  background: url("../images/membership-bg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -899,7 +896,7 @@ Last Updated: 5/28/15 module: _push.scss
   .about-lower-hero p {
     font-size: 22px; } }
 .membership-bg {
-  background: url("../images/index-bg.jpg");
+  background: url("../images/membership-bg-2.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;

@@ -76,9 +76,6 @@ $(document).ready(function(){
 	        map: map,
 	        icon: image
 	    });
-	 //    var currCenter = map.getCenter();
-	 //    google.maps.event.trigger(map, 'resize');
-		// map.setCenter(currCenter);
 	}
 	
 });

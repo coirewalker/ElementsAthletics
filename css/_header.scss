@@ -45,7 +45,6 @@ header {
 .logo {
 	background: url('../images/logo.jpg') no-repeat;
 	background-attachment: fixed;
-	// background-size: cover;
 	background-position: center;
 	height: 66px;
 	width: 66px;
@@ -62,14 +61,7 @@ header {
     transition: .3s;
 }
 
-// .burger-white {
-// 	color: #fff;
-// }
-
-
-
-
-/* ========== JS ========== */
+// JS ADD CLASSES
 .hdr-scrolled {
 	background-color: rgba(255,255,255,.9);
 	-webkit-transition: .5s; /* Safari */
@@ -109,7 +101,9 @@ header {
 }
 
 
-/* ========== Media ==========*/
+
+
+// MEDIA QUERIES
 @media all and (min-width: 769px) {
 	.desktop-nav {
 		display: block;
@@ -118,7 +112,6 @@ header {
 		display: none;
 	}
 }
-
 
 .homepage-header-height {
 	height: auto;
