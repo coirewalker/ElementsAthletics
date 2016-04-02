@@ -293,7 +293,7 @@ ul.navbar-nav {
   .homepage-hero {
     bottom: 35px; }
     .homepage-hero h4 {
-      font-size: 25px; }
+      font-size: 21px; }
     .homepage-hero h3 {
       font-size: 26px;
       line-height: 1; } }
@@ -500,33 +500,20 @@ header {
   .classes-main p {
     text-transform: none; }
   .classes-main h4 {
+    margin-top: 0;
     color: #E50E40; }
 
 .classes-item {
   padding-bottom: 10px; }
-
-.classes-icon-wrap {
-  position: relative; }
-
-.classes-icon {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%); }
-  .classes-icon h3 {
+  .classes-item span {
+    color: #E50E40; }
+  .classes-item .classes-item--title h3 {
+    text-transform: uppercase;
     text-align: center;
-    padding-bottom: 30px;
     font-weight: 700; }
-
-.classes-logo {
-  height: 90px;
-  width: 90px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%); }
+  .classes-item .classes-item--photo {
+    border: 5px solid #000;
+    margin-bottom: 40px; }
 
 .contact-bg {
   background: url("../images/contact-bg.jpg");
