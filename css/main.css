@@ -73,9 +73,6 @@ a {
 .hero-title {
   position: absolute;
   top: 55vh;
-  left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
   width: 100%;
   z-index: 1; }
   .hero-title h2 {
@@ -227,7 +224,7 @@ ul.navbar-nav {
 .homepage-bg {
   background: url("../images/about-bg.jpg");
   background-size: cover;
-  position: relative;
+  position: absolute;
   background-repeat: none;
   top: 0;
   left: 0;
@@ -238,21 +235,20 @@ ul.navbar-nav {
 
 .elements-logo-main {
   position: absolute;
+  background-color: blue;
   top: 22%;
   left: 50%;
-  transform: translateY(-50%);
   transform: translateX(-50%);
   width: 150px;
   height: 150px; }
 
 .homepage-hero {
+  background-color: red;
   position: absolute;
   bottom: 24px;
   left: 50%;
-  transform: translateY(-50%);
   transform: translateX(-50%);
-  width: 100%;
-  max-width: 500px; }
+  width: 100%; }
   .homepage-hero h4 {
     font-family: 'Montserrat', helvetica, arial, sans-serif;
     color: #fff;
@@ -268,7 +264,6 @@ ul.navbar-nav {
     line-height: 0;
     font-size: 19px; }
   .homepage-hero ul {
-    display: block;
     text-align: center;
     margin: 0;
     padding: 0; }
@@ -513,9 +508,9 @@ header {
     font-weight: 700;
     padding-bottom: 20px; }
   .classes-item .classes-item--photo {
-    border: 5px solid #000;
+    border: 3px solid #000;
     margin-bottom: 40px;
-    border-radius: 0 20% 0 20%; }
+    border-radius: 0 13% 0 13%; }
 
 .contact-bg {
   background: url("../images/contact-bg.jpg");

@@ -1,7 +1,7 @@
 .homepage-bg {
     background: url('../images/about-bg.jpg');
     background-size: cover;
-    position: relative;
+    position: absolute;
     background-repeat: none;
     top: 0;
     left: 0;
@@ -13,22 +13,21 @@
 
 .elements-logo-main {
     position: absolute;
+    background-color: blue;
     top: 22%;
     left: 50%;
-    transform: translateY(-50%);
     transform: translateX(-50%);
 	width: 150px;
 	height: 150px;
 }
 
 .homepage-hero {
+	background-color: red;
 	position: absolute;
 	bottom: 24px;
   	left: 50%;
-  	transform: translateY(-50%);
   	transform: translateX(-50%);
   	width: 100%;
-  	max-width: 500px;
   	h4 {
         font-family: 'Montserrat', helvetica, arial, sans-serif;
   		color: #fff;
@@ -47,7 +46,6 @@
         font-size: 19px;
   	}
   	ul {
-  		display: block;
   		text-align: center;
         margin: 0;
         padding: 0;
