@@ -106,7 +106,6 @@ a {
 
 // CENTER HERO TITLE
 .hero-title {
-    margin: 0 auto;
     position: absolute;
     top: 55vh;
     left: 50%;
@@ -115,11 +114,12 @@ a {
     width: 100%;
     z-index: 1;
     h2 {
+    	text-align: center;
         font-family: 'Montserrat', helvetica, arial, sans-serif;
         color: #fff;
-        text-align: center;
         font-size: 40px;
         font-weight: 400;
+        width: 100%;
         @extend .text-shadow;
     }
 }

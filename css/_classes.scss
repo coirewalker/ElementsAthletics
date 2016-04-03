@@ -16,28 +16,6 @@
     z-index: 1;
 }
 
-// .classes-hero {
-//   z-index: 1;
-//   	margin: 0 auto;
-//   	position: absolute;
-//   	top: 50vh;
-//     left: 50%;
-//     transform: translateY(-50%);
-//     transform: translateX(-50%);
-//     width: 100%;
-//     h2 {
-//         font-family: 'Montserrat', helvetica, arial, sans-serif;
-//       	color: #fff;
-//       	text-align: center;
-//         font-size: 40px;
-//         font-weight: 400;
-//       	@extend .text-shadow;
-//     }
-// }
-
-
-
-
 // SCHEDULE 
 .schedule-main {
 	max-width: 1080px;
@@ -94,11 +72,13 @@
 			text-transform: uppercase;
 			text-align: center;
 			font-weight: 700;
+			padding-bottom: 20px;
 		}
 	}
 	.classes-item--photo {
 		border: 5px solid #000;
 		margin-bottom: 40px;
+		border-radius: 0 20% 0 20%;
 	}
 }
 
