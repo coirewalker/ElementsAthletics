@@ -223,7 +223,7 @@ ul.navbar-nav {
   .sb-slidebar h3 {
     font-size: 1.7em; } }
 .homepage-bg {
-  background: url("../images/about-bg.jpg");
+  background: url("../images/contact-bg-2.jpg");
   background-size: cover;
   position: absolute;
   background-repeat: none;
@@ -236,7 +236,6 @@ ul.navbar-nav {
 
 .elements-logo-main {
   position: absolute;
-  background-color: blue;
   top: 22%;
   left: 50%;
   transform: translateX(-50%);
@@ -244,7 +243,6 @@ ul.navbar-nav {
   height: 150px; }
 
 .homepage-hero {
-  background-color: red;
   position: absolute;
   bottom: 24px;
   left: 50%;
@@ -518,7 +516,7 @@ header {
     border-radius: 0 13% 0 13%; }
 
 .contact-bg {
-  background: url("../images/contact-bg.jpg");
+  background: url("../images/about-bg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;

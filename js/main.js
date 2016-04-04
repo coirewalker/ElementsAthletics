@@ -17,22 +17,13 @@ $(document).ready(function(){
 		}
 	});	
 
-  // reset header on window resize
+  	// reset header on window resize
 	$(window).resize(function() {
 		if ($(window).outerWidth() < 769) {
 			$('header').removeClass('hdr-scrolled');
 			$('.desktop-nav').removeClass('nav-scrolled');
 		}
 	});
-
-	// can't get burger to hide yet...
-	// if ($('.sb-slidebar').hasClass('sb-active')) {
-	// 	$('.burger').addClass('hidden');
-	// } else {
-	// 	$('.burger').removeClass('hidden');
-	// }
-
-
 
 
 	// GOOGLE MAP 
