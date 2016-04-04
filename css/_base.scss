@@ -156,8 +156,9 @@ a {
 }
 
 .modal-content {
-	background-color: rgb(231, 109, 109);
-	padding: 20px;
+	background-color: $primary-highlight-color;
+	padding: 7px;
+	margin: 10px;
 }
 
 .modal-header {
