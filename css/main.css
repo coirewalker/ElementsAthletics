@@ -609,6 +609,14 @@ header {
   font-size: 13px;
   font-weight: 700; }
 
+.blog-wrap a, .blog-wrap h3 {
+  -webkit-transition: .3s;
+  /* Safari */
+  transition: .3s; }
+.blog-wrap a h3:hover {
+  text-decoration: underline;
+  color: #E50E40; }
+
 #map {
   height: 260px;
   width: 100%;

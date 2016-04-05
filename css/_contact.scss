@@ -84,6 +84,16 @@
 	}
 }
 
+.blog-wrap {
+	a, h3 {
+		-webkit-transition: .3s; /* Safari */
+    	transition: .3s;
+	}
+	a h3:hover {
+		text-decoration: underline;
+		color: $primary-highlight-color;
+	}
+}
 
 	
 // MAP 
