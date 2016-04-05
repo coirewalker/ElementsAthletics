@@ -572,7 +572,7 @@ header {
     font-weight: 400; }
 
 .contact-lower-hero {
-  padding: 60px 20px 40px 20px;
+  padding: 60px 20px 20px 20px;
   margin: 0 auto;
   z-index: 0;
   border-bottom: solid 3px #000; }
@@ -599,6 +599,15 @@ header {
     color: #000; }
   .contact-lower-hero span {
     color: #E50E40; }
+
+.location-wrap ul {
+  padding-top: 15px;
+  color: #777; }
+.location-wrap li {
+  display: block;
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  font-weight: 700; }
 
 #map {
   height: 260px;
