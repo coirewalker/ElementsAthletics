@@ -241,7 +241,7 @@ ul.navbar-nav {
   .sb-slidebar h3 {
     font-size: 1.7em; } }
 .homepage-bg {
-  background: url("../images/contact-bg-2.jpg");
+  background: url("../images/homepage-bg.jpg");
   background-size: cover;
   position: absolute;
   background-repeat: none;
@@ -415,7 +415,7 @@ header {
     color: #E50E40; }
 
 .coaches-bg {
-  background: url("../images/classes-bg.jpg");
+  background: url("../images/coaches-bg-1.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -468,7 +468,7 @@ header {
   .classes-hero h2 {
     font-size: 55px; } }
 .classes-bg {
-  background: url("../images/index-bg-4.jpg");
+  background: url("../images/classes-bg-1.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -513,8 +513,9 @@ header {
   margin: 0 auto; }
   .classes-main h1, .classes-main h2, .classes-main h3, .classes-main h4, .classes-main h5, .classes-main a, .classes-main p {
     color: #000; }
-  .classes-main p {
-    text-transform: none; }
+  .classes-main .private-lessons p {
+    text-transform: none;
+    font-family: 'Montserrat', helvetica, arial, sans-serif; }
   .classes-main h4 {
     margin-top: 0;
     color: #E50E40; }
@@ -540,7 +541,7 @@ header {
   .class-descriptions-title h2 {
     font-size: 2.2em; } }
 .contact-bg {
-  background: url("../images/about-bg.jpg");
+  background: url("../images/contact-bg-1.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -608,6 +609,8 @@ header {
   font-family: 'Lora', serif;
   font-size: 13px;
   font-weight: 700; }
+.location-wrap li:last-child {
+  color: #000; }
 
 .blog-wrap a, .blog-wrap h3 {
   -webkit-transition: .3s;
@@ -877,7 +880,7 @@ Last Updated: 5/28/15 module: _push.scss
   margin-top: 200px; }
 
 .about-bg {
-  background: url("../images/membership-bg.jpg");
+  background: url("../images/about-bg-1.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -935,7 +938,7 @@ Last Updated: 5/28/15 module: _push.scss
   .about-lower-hero p {
     font-size: 22px; } }
 .membership-bg {
-  background: url("../images/membership-bg-2.jpg");
+  background: url("../images/membership-bg-1.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;

@@ -1,6 +1,6 @@
 	//HERO
 .contact-bg {
-    background: url('../images/about-bg.jpg');
+    background: url('../images/contact-bg-1.jpg');
     background-size: cover;
     position: relative;
     background-repeat: none;
@@ -81,6 +81,9 @@
 		font-family: 'Lora', serif;
 		font-size: 13px;
 		font-weight: 700;
+	}
+	li:last-child {
+		color: #000;
 	}
 }
 
