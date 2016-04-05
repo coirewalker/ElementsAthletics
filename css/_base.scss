@@ -3,6 +3,38 @@ $primary-highlight-color: #E50E40;
 $primary-text-color-dark: #333;
 $primary-text-color-light: #fff;
 
+
+
+/* Keep desktop nav from scrolling */
+#homepage div.desktop-nav.hidden {
+    display: block !important;
+}
+
+#homepage div.desktop-nav {
+	a { 
+		text-shadow: 2px 2px 2px rgba(000, 000, 000, .5);
+	}
+	a:hover {
+		text-shadow: none;
+	}
+}
+
+#homepage .hdr-scrolled {
+    background: none;
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#homepage .nav-scrolled {
+	li a {
+		color: #fff;
+	}
+}
+
+
+
+
 .text-shadow { text-shadow: 2px 2px 2px rgba(000, 000, 000, .5); }
 
 #sb-site {

@@ -48,8 +48,10 @@ $(document).ready(function(){
 	    // How you would like to style the map. 
 	    // This is where you would paste any style found on Snazzy Maps.
 	    styles: 
-	    [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}]
+	    [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
 		};
+
+
 
 
 	    // Get the HTML DOM element that will contain your map 
@@ -60,7 +62,7 @@ $(document).ready(function(){
 	    var map = new google.maps.Map(mapElement, mapOptions);
 
 	    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-	    var image = 'images/gmaps-pin.png';
+	    var image = 'images/gmaps-pin-red.png';
 	    var myLatLng = new google.maps.LatLng(40.678430, -73.954907);
 	    var beachMarker = new google.maps.Marker({
 	        position: myLatLng,
