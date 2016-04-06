@@ -41,8 +41,8 @@ $(document).ready(function(){
 
 	$(window).resize('holdText');
 	function holdText() {
-		hero.css({top: 55vh});
-	}
+		hero.css({top: '55vh'});
+	} 	
 	holdText();
 
 	// GOOGLE MAP 
