@@ -37,13 +37,13 @@ $(document).ready(function(){
 
 
 	// fix hero text against bg on scroll mobile 
-	// var hero = $('.hero-title');
+	function show() {
+    	var offset = $(".hero-title").offset();
+    	var posY = offset.top - $(window).scrollTop();
+	}
 
-	// $(window).resize('holdText');
-	// function holdText() {
-	// 	hero.css({top: '55vh'});
-	// } 	
-	// holdText();
+	show();
+	$(window).scroll(show);
 
 	// GOOGLE MAP 
 	// When the window has finished loading create our google map below
