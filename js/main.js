@@ -27,14 +27,19 @@ $(document).ready(function(){
 
 
 	// fix scrolling bg issue caused by search bar on Chrome and FF mobile 
-	var bg = jQuery('.homepage-bg, .about-bg, .classes-bg, .coaches-bg, membership-bg, .contact-bg');
+	var bg = $('.homepage-bg, .about-bg, .classes-bg, .coaches-bg, membership-bg, .contact-bg');
 	
-	jQuery(window).resize('resizeBackground');
+	$(window).resize('resizeBackground');
 	
 	function resizeBackground() {
-	    bg.height(jQuery(window).height());
+	    bg.height($(window).height());
 	}
 	resizeBackground();
+
+	// fix hero text against bg on scroll mobile 
+	// var hero = jQuery('.hero-title');
+
+
 
 
 	// GOOGLE MAP 
