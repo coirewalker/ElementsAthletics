@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 
 	// fix scrolling bg issue caused by search bar on Chrome and FF mobile 
-	var bg = $('.homepage-bg, .about-bg, .classes-bg, .coaches-bg, .membership-bg, .contact-bg, .hero-title');
+	var bg = $('.homepage-bg, .about-bg, .classes-bg, .coaches-bg, .membership-bg, .contact-bg');
 	
 	$(window).resize('resizeBackground');
 	function resizeBackground() {
