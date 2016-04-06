@@ -26,6 +26,17 @@ $(document).ready(function(){
 	});
 
 
+	// fix scrolling bg issue caused by search bar on Chrome and FF mobile 
+	var bg = jQuery('.homepage-bg, .about-bg, .classes-bg, .coaches-bg, membership-bg, .contact-bg');
+	
+	jQuery(window).resize('resizeBackground');
+	
+	function resizeBackground() {
+	    bg.height(jQuery(window).height() + 60);
+	}
+	resizeBackground();
+
+
 	// GOOGLE MAP 
 	// When the window has finished loading create our google map below
 	google.maps.event.addDomListener(window, 'load', init);
