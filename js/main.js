@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 	$(window).resize('holdText');
 	function holdText() {
-		hero.height($(window).css('height' + 55vh));
+		hero.height($(window).height( + 55vh));
 	}
 	holdText();
 
