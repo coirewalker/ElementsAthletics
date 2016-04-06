@@ -30,19 +30,18 @@ $(document).ready(function(){
 	var bg = $('.homepage-bg, .about-bg, .classes-bg, .coaches-bg, .membership-bg, .contact-bg');
 	
 	$(window).resize('resizeBackground');
-	
 	function resizeBackground() {
 	    bg.height($(window).height());
 	}
 	resizeBackground();
 
+
 	// fix hero text against bg on scroll mobile 
 	var hero = $('.hero-title');
 
 	$(window).resize('holdText');
-
 	function holdText() {
-		hero.height($(window).css('height' + 55vh);
+		hero.height($(window).css('height' + 55vh));
 	}
 	holdText();
 
