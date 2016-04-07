@@ -5,6 +5,8 @@ $primary-text-color-light: #fff;
 
 
 
+// GENERAL
+
 /* Keep desktop nav from scrolling */
 #homepage div.desktop-nav.hidden {
     display: block !important;
@@ -38,7 +40,11 @@ $primary-text-color-light: #fff;
   background: url('../images/hero-noise.png');
 }
 
-// Fonts
+
+
+
+
+// FONTS
 h1, h2, h3, a {
 	font-family: 'Montserrat', helvetica, arial, sans-serif;
 	letter-spacing: -1px;
@@ -90,6 +96,7 @@ a {
 
 
 
+
 // CONTAINERS
 // for reducing blur homepage logo (does not sit on odd pixel) 
 #sb-site {
@@ -134,18 +141,15 @@ a {
 
 
 
+
+
 // CENTER HERO TITLE
 .hero-title {
     position: absolute;
-    // top: 55vh; 
     width: 100%;
     z-index: 1;
     top: 60%;
     transform: translateY(-50%);
-    // position: absolute;
-    // top: 55vh;
-    // width: 100%;
-    // z-index: 1;
     h2 {
     	text-align: center;
         font-family: 'Montserrat', helvetica, arial, sans-serif;
@@ -164,6 +168,8 @@ a {
     }
   }
 }
+
+
 
 
 

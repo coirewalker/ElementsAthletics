@@ -881,14 +881,13 @@ Last Updated: 5/28/15 module: _push.scss
   margin-top: 200px; }
 
 .about-bg {
-  position: relative;
-  padding-top: 65%;
   background: url("../images/about-bg-1.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
   top: 0;
   left: 0;
+  height: 100vh;
   width: 100%;
   background-position: center top;
   opacity: 1;
