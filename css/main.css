@@ -16,7 +16,7 @@
 #homepage .nav-scrolled li a {
   color: #fff; }
 
-.text-shadow, .hero-title h2, .homepage-hero h4, .homepage-hero li, .coaches-hero h2, .contact-hero h2, .about-hero h2, .membership-hero h2 {
+.text-shadow, .btn-circle, .hero-title h2, .homepage-hero h4, .homepage-hero li, .coaches-hero h2, .contact-hero h2, .about-hero h2, .membership-hero h2 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
 
 #sb-site {
@@ -88,6 +88,64 @@ a {
   .bottom-spacer {
     height: 50px;
     content: ''; } }
+.btn-circle {
+  display: none;
+  position: absolute;
+  top: 93vh;
+  width: 100%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+  font-size: 55px;
+  color: rgba(255, 255, 255, 0.85);
+  background: 0 0;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out; }
+  .btn-circle:hover {
+    cursor: default;
+    color: #fff; }
+
+.btn:active {
+  box-shadow: none; }
+
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -moz-transform: scale(1.15);
+    transform: scale(1.15); }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1); } }
+@media (max-width: 768px) {
+  .btn-circle {
+    display: block; } }
 .hero-title {
   position: absolute;
   width: 100%;

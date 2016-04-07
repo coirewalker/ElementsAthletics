@@ -139,7 +139,89 @@ a {
 	}	
 }
 
+.btn-circle {
+	display: none;
+	position: absolute;
+    top: 93vh;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+    font-size: 55px;
+    color: rgba(255,255,255,.85);
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    &:hover {
+    	cursor: default;
+    	color: #fff;
+    }
+    @extend .text-shadow;
 
+}
+
+.btn:active {
+	box-shadow: none;
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;    
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+
+@media (max-width: 768px) {
+	.btn-circle {
+		display: block;
+	}
+}
 
 
 
