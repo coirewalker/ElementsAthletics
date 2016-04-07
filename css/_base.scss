@@ -32,9 +32,6 @@ $primary-text-color-light: #fff;
 	}
 }
 
-
-
-
 .text-shadow { text-shadow: 2px 2px 2px rgba(000, 000, 000, .5); }
 
 #sb-site {
@@ -136,12 +133,19 @@ a {
 }
 
 
+
 // CENTER HERO TITLE
 .hero-title {
     position: absolute;
-    top: 55vh;
+    // top: 55vh; 
     width: 100%;
     z-index: 1;
+    top: 60%;
+    transform: translateY(-50%);
+    // position: absolute;
+    // top: 55vh;
+    // width: 100%;
+    // z-index: 1;
     h2 {
     	text-align: center;
         font-family: 'Montserrat', helvetica, arial, sans-serif;
