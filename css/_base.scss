@@ -139,8 +139,10 @@ a {
 	}	
 }
 
+
+// SCROLL DOWN ARROW 
 .btn-circle {
-	display: none;
+	// display: none;
 	position: absolute;
     top: 81vh;
     width: 100%;
@@ -155,7 +157,7 @@ a {
     transition: background .3s ease-in-out;
     &:hover {
     	cursor: default;
-    	color: #fff;
+    	color: rgba(255,255,255,.85);
     }
     @extend .text-shadow;
 
@@ -188,8 +190,8 @@ a {
     }
 
     50% {
-        -webkit-transform: scale(1.15);
-        transform: scale(1.15);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
     }
 
     100% {
@@ -205,8 +207,8 @@ a {
     }
 
     50% {
-        -moz-transform: scale(1.15);
-        transform: scale(1.15);
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
     }
 
     100% {
@@ -216,12 +218,6 @@ a {
 }
 
 
-
-@media (max-width: 768px) {
-	.btn-circle {
-		display: block;
-	}
-}
 
 
 

@@ -25,25 +25,15 @@ $(document).ready(function(){
 		}
 	});
 
-
-	// fix scrolling bg issue caused by search bar on Chrome and FF mobile 
-	// var bg = $('.homepage-bg, .about-bg, .classes-bg, .coaches-bg, .membership-bg, .contact-bg');
-	
-	// $(window).resize('resizeBackground');
-	// function resizeBackground() {
-	//     bg.height($(window).height());
-	// }
-	// resizeBackground();
-
-
-	// fix hero text against bg on scroll mobile 
-	// var hero = $('.hero-title');
-
-	// $(window).resize('holdText');
-	// function holdText() {
-	// 	hero.height($(window).height('55vh'));
-	// } 	
-	// holdText();
+	// pause arrow animation on scroll
+	$(window).scroll(function() {
+		var scroll_top = $(this).scrollTop();
+		if (scroll_top >= 1) {
+			$('.btn-circle i').removeClass('animated');
+		} else {
+			$('.btn-circle i').addClass('animated');
+		}
+	});
 
 	// GOOGLE MAP 
 	// When the window has finished loading create our google map below

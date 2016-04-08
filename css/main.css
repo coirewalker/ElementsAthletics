@@ -89,7 +89,6 @@ a {
     height: 50px;
     content: ''; } }
 .btn-circle {
-  display: none;
   position: absolute;
   top: 81vh;
   width: 100%;
@@ -104,7 +103,7 @@ a {
   transition: background .3s ease-in-out; }
   .btn-circle:hover {
     cursor: default;
-    color: #fff; }
+    color: rgba(255, 255, 255, 0.85); }
 
 .btn:active {
   box-shadow: none; }
@@ -128,8 +127,8 @@ a {
     -webkit-transform: scale(1);
     transform: scale(1); }
   50% {
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15); }
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
@@ -138,14 +137,11 @@ a {
     -moz-transform: scale(1);
     transform: scale(1); }
   50% {
-    -moz-transform: scale(1.15);
-    transform: scale(1.15); }
+    -moz-transform: scale(1.2);
+    transform: scale(1.2); }
   100% {
     -moz-transform: scale(1);
     transform: scale(1); } }
-@media (max-width: 768px) {
-  .btn-circle {
-    display: block; } }
 .hero-title {
   position: absolute;
   width: 100%;
