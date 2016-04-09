@@ -5,9 +5,11 @@ $primary-text-color-light: #fff;
 
 
 
+
+
 // GENERAL
 
-/* Keep desktop nav from scrolling */
+// Keep desktop nav from scrolling 
 #homepage div.desktop-nav.hidden {
     display: block !important;
 }
@@ -148,9 +150,11 @@ a {
 }
 
 
+
+
+
 // SCROLL DOWN ARROW 
 .btn-circle {
-	// display: none;
 	position: absolute;
     top: 81vh;
     width: 100%;

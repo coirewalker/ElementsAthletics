@@ -1,4 +1,3 @@
-/* Keep desktop nav from scrolling */
 #homepage div.desktop-nav.hidden {
   display: block !important; }
 
