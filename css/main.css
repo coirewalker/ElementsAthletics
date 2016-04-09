@@ -5,7 +5,8 @@
 #homepage div.desktop-nav a {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
 #homepage div.desktop-nav a:hover {
-  text-shadow: none; }
+  text-shadow: none;
+  color: #F82758; }
 
 #homepage .hdr-scrolled {
   background: none;
@@ -20,7 +21,7 @@
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
 
 #sb-site {
-  background: url("../images/hero-noise.png"); }
+  background: url("../images/hero-noise.jpg"); }
 
 h1, h2, h3, a {
   font-family: 'Montserrat', helvetica, arial, sans-serif;
@@ -504,7 +505,9 @@ header {
 .coach-item {
   padding-bottom: 10px; }
   .coach-item h3 {
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 1.7em;
+    text-transform: uppercase; }
 
 .bio-name {
   text-align: left;
