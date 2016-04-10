@@ -1,5 +1,5 @@
 .about-bg {
-    background: url('../images/about-bg-mobile.jpg');
+    background: url('../images/about-bg.jpg');
     background-size: cover;
     position: relative;
     background-repeat: none;
@@ -62,15 +62,6 @@
   }
 }
 
-@media (min-width: 768px) {
-	.about-bg {
-		background: url('../images/about-bg-tablet.jpg');
-    	background-position: center center;
-		height: 100vh;
-		background-repeat: none;
-    	background-size: cover;
-	}
-}
 
 @media (min-width: 769px) {
   .about-lower-hero {
@@ -81,14 +72,4 @@
       font-size: 22px;
     }
   }
-}
-
-@media (min-width: 1025px) {
-		.about-bg {
-		background: url('../images/about-bg-desktop.jpg');
-    	background-position: center center;
-		height: 100vh;
-		background-repeat: none;
-    	background-size: cover;
-	}
 }

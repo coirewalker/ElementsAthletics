@@ -156,9 +156,9 @@ a {
     font-weight: 400;
     width: 100%; }
 
-@media (min-width: 500px) {
+@media (min-width: 400px) {
   .hero-title h2 {
-    font-size: 55px; } }
+    font-size: 50px; } }
 .modal {
   background-color: none; }
 
@@ -347,7 +347,7 @@ ul.navbar-nav {
 
 @media (min-width: 768px) {
   .homepage-bg {
-    background: url("../images/homepage-bg-tablet.jpg");
+    background: url("../images/homepage-bg-desktop.jpg");
     background-position: center center;
     height: 100vh;
     background-repeat: none;
@@ -364,18 +364,6 @@ ul.navbar-nav {
     .homepage-hero h3 {
       font-size: 26px;
       line-height: 1; } }
-@media (min-width: 1025px) {
-  .homepage-bg {
-    background: url("../images/homepage-bg-desktop.jpg");
-    background-size: cover;
-    position: absolute;
-    background-repeat: none;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
-    background-position: center; } }
 header {
   height: 60px;
   position: fixed;
@@ -482,7 +470,7 @@ header {
     color: #E50E40; }
 
 .coaches-bg {
-  background: url("../images/coaches-bg-1.jpg");
+  background: url("../images/coaches-bg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -537,7 +525,7 @@ header {
   .classes-hero h2 {
     font-size: 55px; } }
 .classes-bg {
-  background: url("../images/classes-bg-1.jpg");
+  background: url("../images/classes-bg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -610,7 +598,7 @@ header {
   .class-descriptions-title h2 {
     font-size: 2.2em; } }
 .contact-bg {
-  background: url("../images/contact-bg-1.jpg");
+  background: url("../images/contact-bg-mobile.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -618,7 +606,7 @@ header {
   left: 0;
   height: 100vh;
   width: 100%;
-  background-position: center;
+  background-position: center top;
   opacity: 1;
   -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.51);
@@ -700,6 +688,13 @@ header {
 @media (min-width: 500px) {
   .contact-hero h2 {
     font-size: 55px; } }
+@media (min-width: 768px) {
+  .contact-bg {
+    background: url("../images/contact-bg-desktop.jpg");
+    background-position: center center;
+    height: 100vh;
+    background-repeat: none;
+    background-size: cover; } }
 @media (min-width: 1081px) {
   #map {
     height: 400px; } }
@@ -949,7 +944,7 @@ Last Updated: 5/28/15 module: _push.scss
   margin-top: 200px; }
 
 .about-bg {
-  background: url("../images/about-bg-mobile.jpg");
+  background: url("../images/about-bg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -1000,28 +995,14 @@ Last Updated: 5/28/15 module: _push.scss
 @media (min-width: 500px) {
   .about-hero h2 {
     font-size: 55px; } }
-@media (min-width: 768px) {
-  .about-bg {
-    background: url("../images/about-bg-tablet.jpg");
-    background-position: center center;
-    height: 100vh;
-    background-repeat: none;
-    background-size: cover; } }
 @media (min-width: 769px) {
   .about-lower-hero {
     padding: 120px 80px; }
 
   .about-lower-hero p {
     font-size: 22px; } }
-@media (min-width: 1025px) {
-  .about-bg {
-    background: url("../images/about-bg-desktop.jpg");
-    background-position: center center;
-    height: 100vh;
-    background-repeat: none;
-    background-size: cover; } }
 .membership-bg {
-  background: url("../images/membership-bg-1.jpg");
+  background: url("../images/membership-bg.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -1053,7 +1034,6 @@ Last Updated: 5/28/15 module: _push.scss
     font-weight: 400; }
 
 .membership-lower-hero {
-  background: url("../images/hero-noise.png");
   padding: 60px 20px;
   margin: 0 auto;
   z-index: 0; }

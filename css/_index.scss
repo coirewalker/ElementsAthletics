@@ -63,7 +63,7 @@
 // // MEDIA QUERIES
 @media (min-width: 768px) {
 	.homepage-bg {
-		background: url('../images/homepage-bg-tablet.jpg');
+		background: url('../images/homepage-bg-desktop.jpg');
     	background-position: center center;
 		height: 100vh;
 		background-repeat: none;
@@ -85,20 +85,6 @@
 	}
 }
 
-@media (min-width: 1025px) {
-	.homepage-bg {
-    	background: url('../images/homepage-bg-desktop.jpg');
-	    background-size: cover;
-	    position: absolute;
-	    background-repeat: none;
-	    top: 0;
-	    left: 0;
-	    height: 100vh;
-	    width: 100%;
-	    z-index: -1;
-	    background-position: center;
-	}
-}
 
 
 
