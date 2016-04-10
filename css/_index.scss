@@ -13,7 +13,8 @@
 
 .elements-logo-main {
     position: absolute;
-    top: 22%;
+    // top: 22%;
+    bottom: 40%;
     left: 50%;
     transform: translateX(-50%);
 	width: 150px;
@@ -63,13 +64,13 @@
 // // MEDIA QUERIES
 @media (min-width: 375px) {
 	.elements-logo-main {
-		top: 25%;
+		// top: 25%;
 	}
 }
 
 @media (min-width: 480px) {
 	.elements-logo-main {
-		top: 18%;
+		// top: 18%;
 	}
 }
 
@@ -77,7 +78,7 @@
 	.elements-logo-main {
 		height: 220px;
 		width: 220px;
-		top: 25%;
+		// top: 25%;
 	}
 	.homepage-hero {
 		bottom: 35px;

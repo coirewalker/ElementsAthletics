@@ -309,7 +309,7 @@ ul.navbar-nav {
 
 .elements-logo-main {
   position: absolute;
-  top: 22%;
+  bottom: 40%;
   left: 50%;
   transform: translateX(-50%);
   width: 150px;
@@ -345,17 +345,10 @@ ul.navbar-nav {
     text-align: center;
     list-style-type: none; }
 
-@media (min-width: 375px) {
-  .elements-logo-main {
-    top: 25%; } }
-@media (min-width: 480px) {
-  .elements-logo-main {
-    top: 18%; } }
 @media (min-width: 768px) {
   .elements-logo-main {
     height: 220px;
-    width: 220px;
-    top: 25%; }
+    width: 220px; }
 
   .homepage-hero {
     bottom: 35px; }
