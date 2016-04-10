@@ -62,6 +62,14 @@ header {
 }
 
 // JS ADD CLASSES
+.burger-dark {
+	color: #000;
+}
+
+.burger-light {
+	color: #fff;
+}
+
 .hdr-scrolled {
 	background-color: rgba(255,255,255,.9);
 	-webkit-transition: .5s; /* Safari */

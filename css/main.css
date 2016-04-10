@@ -418,6 +418,12 @@ header {
   /* Safari */
   transition: .3s; }
 
+.burger-dark {
+  color: #000; }
+
+.burger-light {
+  color: #fff; }
+
 .hdr-scrolled {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: .5s;

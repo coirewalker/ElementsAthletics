@@ -17,6 +17,7 @@ $(document).ready(function(){
 		}
 	});	
 
+  	
   	// reset header on window resize
 	$(window).resize(function() {
 		if ($(window).outerWidth() < 769) {
@@ -24,6 +25,7 @@ $(document).ready(function(){
 			$('.desktop-nav').removeClass('nav-scrolled');
 		}
 	});
+
 
 	// pause arrow animation on scroll
 	$(window).scroll(function() {
@@ -34,6 +36,24 @@ $(document).ready(function(){
 			$('.btn-circle i').addClass('animated');
 		}
 	});
+
+
+	//Change burger color on scroll down 
+    var $win = $(window);
+    var winH = $win.height();
+
+	$win.on('scroll', function() {
+		if ($(this).scrollTop() > winH) {
+			$('.burger').removeClass('burger-light');
+			$('.burger').addClass('burger-dark');
+		} else {
+			$('.burger').removeClass('burger-dark');
+			$('.burger').addClass('burger-light');
+		}
+	}).on('resize', function() {
+		winH = $(this).height();
+	});
+
 
 	// GOOGLE MAP 
 	// When the window has finished loading create our google map below
@@ -59,8 +79,6 @@ $(document).ready(function(){
 	    styles: 
 	    [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
 		};
-
-
 
 
 	    // Get the HTML DOM element that will contain your map 
