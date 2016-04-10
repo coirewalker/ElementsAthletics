@@ -527,6 +527,9 @@ header {
 
 .cert-list {
   padding-left: 20px; }
+  .cert-list li {
+    text-transform: uppercase;
+    font-weight: 700; }
 
 @media (min-width: 500px) {
   .classes-hero h2 {
