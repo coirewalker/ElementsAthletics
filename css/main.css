@@ -166,7 +166,8 @@ a {
   padding: 0; }
 
 .modal-dialog {
-  width: 100%; }
+  width: 100%;
+  margin: 10px 0; }
 
 .modal-header {
   border-bottom: none;
@@ -177,7 +178,7 @@ a {
 .modal-content {
   background-color: #E50E40;
   padding: 7px;
-  margin: 10px; }
+  margin: 5px; }
 
 .modal-header {
   padding: 0 !important; }
