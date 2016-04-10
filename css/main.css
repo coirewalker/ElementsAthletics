@@ -296,7 +296,7 @@ ul.navbar-nav {
   .sb-slidebar h3 {
     font-size: 1.7em; } }
 .homepage-bg {
-  background: url("../images/homepage-bg.jpg");
+  background: url("../images/homepage-bg-mobile.jpg");
   background-size: cover;
   position: absolute;
   background-repeat: none;
@@ -346,6 +346,13 @@ ul.navbar-nav {
     list-style-type: none; }
 
 @media (min-width: 768px) {
+  .homepage-bg {
+    background: url("../images/homepage-bg-tablet.jpg");
+    background-position: center center;
+    height: 100vh;
+    background-repeat: none;
+    background-size: cover; }
+
   .elements-logo-main {
     height: 220px;
     width: 220px; }
@@ -357,6 +364,18 @@ ul.navbar-nav {
     .homepage-hero h3 {
       font-size: 26px;
       line-height: 1; } }
+@media (min-width: 1025px) {
+  .homepage-bg {
+    background: url("../images/homepage-bg-desktop.jpg");
+    background-size: cover;
+    position: absolute;
+    background-repeat: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background-position: center; } }
 header {
   height: 60px;
   position: fixed;
@@ -930,7 +949,7 @@ Last Updated: 5/28/15 module: _push.scss
   margin-top: 200px; }
 
 .about-bg {
-  background: url("../images/about-bg-1.jpg");
+  background: url("../images/about-bg-mobile.jpg");
   background-size: cover;
   position: relative;
   background-repeat: none;
@@ -938,7 +957,7 @@ Last Updated: 5/28/15 module: _push.scss
   left: 0;
   height: 100vh;
   width: 100%;
-  background-position: center top;
+  background-position: center center;
   opacity: 1;
   -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.51);
@@ -981,12 +1000,26 @@ Last Updated: 5/28/15 module: _push.scss
 @media (min-width: 500px) {
   .about-hero h2 {
     font-size: 55px; } }
+@media (min-width: 768px) {
+  .about-bg {
+    background: url("../images/about-bg-tablet.jpg");
+    background-position: center center;
+    height: 100vh;
+    background-repeat: none;
+    background-size: cover; } }
 @media (min-width: 769px) {
   .about-lower-hero {
     padding: 120px 80px; }
 
   .about-lower-hero p {
     font-size: 22px; } }
+@media (min-width: 1025px) {
+  .about-bg {
+    background: url("../images/about-bg-desktop.jpg");
+    background-position: center center;
+    height: 100vh;
+    background-repeat: none;
+    background-size: cover; } }
 .membership-bg {
   background: url("../images/membership-bg-1.jpg");
   background-size: cover;

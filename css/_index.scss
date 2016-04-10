@@ -1,5 +1,5 @@
 .homepage-bg {
-    background: url('../images/homepage-bg.jpg');
+    background: url('../images/homepage-bg-mobile.jpg');
     background-size: cover;
     position: absolute;
     background-repeat: none;
@@ -13,7 +13,6 @@
 
 .elements-logo-main {
     position: absolute;
-    // top: 22%;
     bottom: 40%;
     left: 50%;
     transform: translateX(-50%);
@@ -62,23 +61,17 @@
 
 
 // // MEDIA QUERIES
-@media (min-width: 375px) {
-	.elements-logo-main {
-		// top: 25%;
-	}
-}
-
-@media (min-width: 480px) {
-	.elements-logo-main {
-		// top: 18%;
-	}
-}
-
 @media (min-width: 768px) {
+	.homepage-bg {
+		background: url('../images/homepage-bg-tablet.jpg');
+    	background-position: center center;
+		height: 100vh;
+		background-repeat: none;
+    	background-size: cover;
+	}
 	.elements-logo-main {
 		height: 220px;
 		width: 220px;
-		// top: 25%;
 	}
 	.homepage-hero {
 		bottom: 35px;
@@ -92,6 +85,20 @@
 	}
 }
 
+@media (min-width: 1025px) {
+	.homepage-bg {
+    	background: url('../images/homepage-bg-desktop.jpg');
+	    background-size: cover;
+	    position: absolute;
+	    background-repeat: none;
+	    top: 0;
+	    left: 0;
+	    height: 100vh;
+	    width: 100%;
+	    z-index: -1;
+	    background-position: center;
+	}
+}
 
 
 

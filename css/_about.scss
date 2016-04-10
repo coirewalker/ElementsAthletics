@@ -1,5 +1,5 @@
 .about-bg {
-    background: url('../images/about-bg-1.jpg');
+    background: url('../images/about-bg-mobile.jpg');
     background-size: cover;
     position: relative;
     background-repeat: none;
@@ -7,7 +7,7 @@
     left: 0;
     height: 100vh;
     width: 100%;
-    background-position: center top;
+    background-position: center center;
     opacity: 1;
   	-webkit-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.51);
   	-moz-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.51);
@@ -62,6 +62,16 @@
   }
 }
 
+@media (min-width: 768px) {
+	.about-bg {
+		background: url('../images/about-bg-tablet.jpg');
+    	background-position: center center;
+		height: 100vh;
+		background-repeat: none;
+    	background-size: cover;
+	}
+}
+
 @media (min-width: 769px) {
   .about-lower-hero {
     padding: 120px 80px;
@@ -71,4 +81,14 @@
       font-size: 22px;
     }
   }
+}
+
+@media (min-width: 1025px) {
+		.about-bg {
+		background: url('../images/about-bg-desktop.jpg');
+    	background-position: center center;
+		height: 100vh;
+		background-repeat: none;
+    	background-size: cover;
+	}
 }
