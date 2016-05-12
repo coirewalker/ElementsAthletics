@@ -615,15 +615,33 @@ header {
     padding-bottom: 20px; }
     .classes-copy p:hover {
       color: #333; }
-  .classes-copy p:last-child {
-    padding-bottom: 0;
-    margin-bottom: 0; }
   .classes-copy span {
     color: #E50E40; }
+
+.classes-b-list p, .classes-b-list li {
+  font-size: 1.35em; }
+.classes-b-list p {
+  padding: 0;
+  margin: 0;
+  text-align: left; }
+.classes-b-list p:first-child {
+  padding-bottom: 10px; }
+.classes-b-list li {
+  text-align: left;
+  list-style: none;
+  color: #333;
+  font-family: 'Montserrat', helvetica, arial, sans-serif;
+  font-weight: 400; }
+
+.classes-btm-copy p {
+  padding-top: 40px; }
 
 @media (min-width: 375px) {
   .class-descriptions-title h2 {
     font-size: 2.2em; } }
+@media (min-width: 768px) {
+  .classes-b-list {
+    margin-left: 5%; } }
 .contact-bg {
   background: url("../images/contact-bg-mobile.jpg");
   background-size: cover;
