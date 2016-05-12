@@ -16,7 +16,7 @@
 }
 
 .about-hero {
-  z-index: 1;
+  	z-index: 1;
   	margin: 0 auto;
   	position: absolute;
   	top: 50vh;
@@ -33,6 +33,7 @@
       	@extend .text-shadow;
     }
 }
+
 .about-lower-hero {
 	padding: 60px 20px;
   	margin: 0 auto;
@@ -43,8 +44,7 @@
       	font-weight: 400;
         letter-spacing: 0;
         text-transform: none;
-        text-align: center;
-        font-size: 18px;
+        padding-bottom: 20px;
         &:hover {
           color: #333;
         }
@@ -66,10 +66,5 @@
 @media (min-width: 769px) {
   .about-lower-hero {
     padding: 120px 80px;
-  }
-  .about-lower-hero {
-    p {
-      font-size: 22px;
-    }
   }
 }

@@ -44,7 +44,7 @@ h4 {
   font-weight: 700; }
 
 p {
-  font-size: 1.15em; }
+  font-size: 1.35em; }
 
 ul {
   color: #000;
@@ -310,7 +310,7 @@ ul.navbar-nav {
 
 .elements-logo-main {
   position: absolute;
-  bottom: 40%;
+  bottom: 42%;
   left: 50%;
   transform: translateX(-50%);
   width: 150px;
@@ -355,8 +355,8 @@ ul.navbar-nav {
     background-size: cover; }
 
   .elements-logo-main {
-    height: 220px;
-    width: 220px; }
+    height: 260px;
+    width: 260px; }
 
   .homepage-hero {
     bottom: 35px; }
@@ -603,6 +603,23 @@ header {
 
 .class-descriptions-title h2 {
   font-size: 2em; }
+
+.classes-copy {
+  padding-top: 40px; }
+  .classes-copy p {
+    color: #333;
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    padding-bottom: 20px; }
+    .classes-copy p:hover {
+      color: #333; }
+  .classes-copy p:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  .classes-copy span {
+    color: #E50E40; }
 
 @media (min-width: 375px) {
   .class-descriptions-title h2 {
@@ -995,8 +1012,7 @@ Last Updated: 5/28/15 module: _push.scss
     font-weight: 400;
     letter-spacing: 0;
     text-transform: none;
-    text-align: center;
-    font-size: 18px; }
+    padding-bottom: 20px; }
     .about-lower-hero p:hover {
       color: #333; }
   .about-lower-hero span {
@@ -1007,10 +1023,7 @@ Last Updated: 5/28/15 module: _push.scss
     font-size: 55px; } }
 @media (min-width: 769px) {
   .about-lower-hero {
-    padding: 120px 80px; }
-
-  .about-lower-hero p {
-    font-size: 22px; } }
+    padding: 120px 80px; } }
 .membership-bg {
   background: url("../images/membership-bg.jpg");
   background-size: cover;
