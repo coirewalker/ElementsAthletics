@@ -612,8 +612,9 @@ p.disciplines {
   font-size: 2em; }
 
 .classes-copy {
-  padding-top: 40px; }
+  padding-top: 60px; }
   .classes-copy p {
+    text-align: center;
     color: #333;
     font-family: 'Montserrat', helvetica, arial, sans-serif;
     font-weight: 400;
@@ -629,12 +630,11 @@ p.disciplines {
   font-size: 1.35em; }
 .classes-b-list p {
   padding: 0;
-  margin: 0;
-  text-align: left; }
+  margin: 0; }
 .classes-b-list p:first-child {
   padding-bottom: 10px; }
 .classes-b-list li {
-  text-align: left;
+  text-align: center;
   list-style: none;
   color: #333;
   font-family: 'Montserrat', helvetica, arial, sans-serif;
@@ -646,9 +646,6 @@ p.disciplines {
 @media (min-width: 375px) {
   .class-descriptions-title h2 {
     font-size: 2.2em; } }
-@media (min-width: 768px) {
-  .classes-b-list {
-    margin-left: 5%; } }
 .contact-bg {
   background: url("../images/contact-bg-mobile.jpg");
   background-size: cover;

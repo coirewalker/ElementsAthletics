@@ -94,8 +94,9 @@
 
 // UPDATED COPY
 .classes-copy {
-	padding-top: 40px;
+	padding-top: 60px;
 	p {
+		text-align: center;
     	color: #333;
         font-family: 'Montserrat', helvetica, arial, sans-serif;
       	font-weight: 400;
@@ -118,13 +119,12 @@
 	p {
 		padding: 0;
 		margin: 0;
-		text-align: left;	
     }
 	p:first-child {
 		padding-bottom: 10px;
 	}
 	li {
-		text-align: left;
+		text-align: center;
 		list-style: none;
 		color: #333;
         font-family: 'Montserrat', helvetica, arial, sans-serif;
@@ -148,9 +148,5 @@
 	}
 }
 
-@media (min-width: 768px) {
-	.classes-b-list {
-		margin-left: 5%;
-	}
-}
+
 
