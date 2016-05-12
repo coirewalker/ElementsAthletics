@@ -71,14 +71,24 @@
 	margin-bottom: 30px;
 }
 
-.cert-list {
+.cert-list, .training-list {
 	padding-left: 20px;
-	 li {
-	 	text-transform: uppercase;
-	 	font-weight: 700;
-	 }
+ 	font-weight: 700;
 }
 
+.cert-list {
+	 li {
+ 		text-transform: uppercase;
+ 	}
+}
+
+.training-list {
+ 	font-size: 1.25em;
+}
+
+p.disciplines {
+	font-weight: 700;
+}
 
 
 // MEDIA QUERIES

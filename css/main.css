@@ -525,11 +525,18 @@ header {
   border: 5px solid #222;
   margin-bottom: 30px; }
 
-.cert-list {
-  padding-left: 20px; }
-  .cert-list li {
-    text-transform: uppercase;
-    font-weight: 700; }
+.cert-list, .training-list {
+  padding-left: 20px;
+  font-weight: 700; }
+
+.cert-list li {
+  text-transform: uppercase; }
+
+.training-list {
+  font-size: 1.25em; }
+
+p.disciplines {
+  font-weight: 700; }
 
 @media (min-width: 500px) {
   .classes-hero h2 {
