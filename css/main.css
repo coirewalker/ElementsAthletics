@@ -588,6 +588,7 @@ p.disciplines {
   .classes-main h1, .classes-main h2, .classes-main h3, .classes-main h4, .classes-main h5, .classes-main a, .classes-main p {
     color: #000; }
   .classes-main .private-lessons p {
+    text-align: center;
     text-transform: none;
     font-family: 'Montserrat', helvetica, arial, sans-serif; }
   .classes-main h4 {
@@ -749,7 +750,7 @@ p.disciplines {
     height: 400px; } }
 footer {
   width: 100%;
-  height: 300px;
+  height: 330px;
   background-color: #000;
   padding-top: 30px;
   clear: both; }
@@ -807,9 +808,21 @@ footer {
     color: #F82758;
     opacity: 1; }
 
+.watermark {
+  color: white;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 12px;
+  padding-top: 10px; }
+  .watermark a {
+    color: #908D8D; }
+  .watermark a:hover {
+    text-decoration: underline;
+    color: #E50E40; }
+
 @media all and (min-width: 768px) {
   footer {
-    height: 150px; }
+    height: 180px; }
 
   .footer-social-wrap ul {
     text-align: center; }
@@ -1034,6 +1047,7 @@ Last Updated: 5/28/15 module: _push.scss
     font-weight: 400;
     letter-spacing: 0;
     text-transform: none;
+    text-align: center;
     padding-bottom: 20px; }
     .about-lower-hero p:hover {
       color: #333; }
@@ -1045,7 +1059,7 @@ Last Updated: 5/28/15 module: _push.scss
     font-size: 55px; } }
 @media (min-width: 769px) {
   .about-lower-hero {
-    padding: 120px 80px; } }
+    padding: 60px 80px; } }
 .membership-bg {
   background: url("../images/membership-bg.jpg");
   background-size: cover;
