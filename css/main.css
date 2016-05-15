@@ -514,6 +514,10 @@ header {
     font-weight: 700;
     font-size: 1.7em;
     text-transform: uppercase; }
+  .coach-item .coach-img {
+    -webkit-box-shadow: 4px 4px 32px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 32px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 4px 32px -7px rgba(0, 0, 0, 0.75); }
 
 .bio-name {
   text-align: left;
@@ -607,7 +611,10 @@ p.disciplines {
   .classes-item .classes-item--photo {
     border: 3px solid #000;
     margin-bottom: 40px;
-    border-radius: 0 13% 0 13%; }
+    border-radius: 0 13% 0 13%;
+    -webkit-box-shadow: 4px 4px 32px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 32px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 4px 32px -7px rgba(0, 0, 0, 0.75); }
 
 .class-descriptions-title h2 {
   font-size: 2em; }
@@ -825,9 +832,7 @@ footer {
     height: 180px; }
 
   .footer-social-wrap ul {
-    text-align: center; }
-  .footer-social-wrap .footer-address-wrap li {
-    text-align: left; } }
+    text-align: center; } }
 /*doc
 ---
 title: Push

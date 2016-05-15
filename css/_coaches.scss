@@ -57,6 +57,11 @@
 		font-size: 1.7em;
 		text-transform: uppercase;
 	}
+	.coach-img {
+		-webkit-box-shadow: 4px 4px 32px -7px rgba(0,0,0,0.75);
+		-moz-box-shadow: 4px 4px 32px -7px rgba(0,0,0,0.75);
+		box-shadow: 4px 4px 32px -7px rgba(0,0,0,0.75);
+	}
 }
 
 .bio-name {
