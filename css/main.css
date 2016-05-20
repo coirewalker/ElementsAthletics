@@ -745,7 +745,7 @@ p.disciplines {
 @media (min-width: 500px) {
   .contact-hero h2 {
     font-size: 55px; } }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .contact-bg {
     background: url("../images/contact-bg-desktop.jpg");
     background-position: center center;
