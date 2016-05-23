@@ -129,6 +129,7 @@
 
 }
 
+// if the screen is 769px or WIDER use this image...Why is this so difficult to remember!?!
 @media (min-width: 769px) {
 	.contact-bg {
 		background: url('../images/contact-bg-desktop.jpg');
