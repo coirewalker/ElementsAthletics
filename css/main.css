@@ -297,7 +297,7 @@ ul.navbar-nav {
   .sb-slidebar h3 {
     font-size: 1.7em; } }
 .homepage-bg {
-  background: url("../images/homepage-bg-mobile.jpg");
+  background: url("../images/homepage-bg-mobile-2.jpg");
   background-size: cover;
   position: absolute;
   background-repeat: none;
@@ -348,7 +348,7 @@ ul.navbar-nav {
 
 @media (min-width: 768px) {
   .homepage-bg {
-    background: url("../images/homepage-bg-desktop.jpg");
+    background: url("../images/homepage-bg-desktop-2.jpg");
     background-position: center center;
     height: 100vh;
     background-repeat: none;
