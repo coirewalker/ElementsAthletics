@@ -795,7 +795,8 @@ footer {
     transition: .3s;
     text-transform: none;
     line-height: 30px;
-    font-size: 13px; }
+    font-size: 13px;
+    letter-spacing: 0; }
     .footer-address-wrap li a:hover {
       color: #F82758;
       opacity: 1; }
