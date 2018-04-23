@@ -634,14 +634,14 @@ p.disciplines {
   .classes-copy span {
     color: #E50E40; }
 
-.classes-b-list p, .classes-b-list li {
+.classes-b-list p, .classes-b-list li, .membership-list p, .membership-list li {
   font-size: 1.35em; }
-.classes-b-list p {
+.classes-b-list p, .membership-list p {
   padding: 0;
   margin: 0; }
-.classes-b-list p:first-child {
+.classes-b-list p:first-child, .membership-list p:first-child {
   padding-bottom: 10px; }
-.classes-b-list li {
+.classes-b-list li, .membership-list li {
   text-align: center;
   list-style: none;
   color: #333;
@@ -651,6 +651,8 @@ p.disciplines {
 .classes-btm-copy p {
   padding-top: 40px; }
 
+/* 16x9 Aspect Ratio */
+/* 4x3 Aspect Ratio */
 @media (min-width: 375px) {
   .class-descriptions-title h2 {
     font-size: 2.2em; } }
