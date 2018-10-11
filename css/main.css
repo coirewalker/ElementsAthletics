@@ -542,6 +542,10 @@ header {
 p.disciplines {
   font-weight: 700; }
 
+h5.mike-title {
+  text-align: center;
+  font-weight: bold; }
+
 @media (min-width: 500px) {
   .classes-hero h2 {
     font-size: 55px; } }
